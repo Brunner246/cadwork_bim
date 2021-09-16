@@ -1,0 +1,6 @@
+# action.yaml
+inputs:
+  auth_token:
+    description: 'Auth token used to API'
+    required: true
+    default: "${{ github.token }}"
