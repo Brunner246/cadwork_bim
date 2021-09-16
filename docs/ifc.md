@@ -22,7 +22,16 @@ IFC- Dateien können entweder über das  "+" Symbol, oder mit «Drag and Drop» 
 ![GIF](img/import.gif){: style="width:900px"}
 
 Importierte Elemente werden als **"Exchange-Objekt"** eingelesen, welches nur der Visualisierung dient. Sie können nicht in einer 2D-Ebene dargestellt oder in den Planausgaben exportiert werden. Sie können auch nicht bearbeitet oder zur Kollisionskontrolle genutzt werden.
-Mit «Aktivieren nach Attribut» können die Bauteile selektiert werden. So können Sie zum Beispiel die ++ctrl+"A"++ -Funktionen nutzen, um nur die Exchange-Objekte nach IFC-Gebäude ++ctrl+shift+"A"++ , IFC-Geschoss, IFC-Typ, Name, Material und Farbe zu aktivieren, die Sie als cadwork Bauteile erzeugen möchten.
+Mit «Aktivieren nach Attribut» können die Bauteile selektiert werden. So können Sie zum Beispiel die ++ctrl+"A"++ -Funktionen nutzen, um nur die Exchange-Objekte nach 
+
+* IFC-Gebäude       ++ctrl+"A"+shift+"A"++ 
+* IFC-Geschoss      ++ctrl+"A"+shift+"S"++
+* IFC-Typ           ++ctrl+"A"+shift+"T"++
+* Name              ++ctrl+"A"+"N"++
+* Material          ++ctrl+"A"+"M"++
+* Farbe             ++ctrl+"A"+"C"++ 
+
+zu aktivieren, die Sie als cadwork Bauteile erzeugen möchten.
 
 
 ## Globaler - lokaler Nullpunkt
