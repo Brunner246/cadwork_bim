@@ -5,6 +5,9 @@ nav:
     - IFC & cadwork: ifc.md
     - BCF & cadwork: bcf.md
     - Examples: examples.md
+    - Workflowsheets:
+      - Archicad: archicad.md
+      - Revit 2022: revit.md
     - About: about.md
 theme:
     name: material
@@ -25,9 +28,9 @@ theme:
     features:
     - search.suggest
     - search.highlight
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.instant
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.instant
 markdown_extensions:
   - attr_list  
   - admonition
