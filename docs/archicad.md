@@ -4,6 +4,8 @@
 
 Diese Anleitung beschreibt den open BIM Workflow auf der Basis von IFC 2x3 CV2.0 zwischen ArchiCAD und cadwork Holzbau.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bbDkPNFKdl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## IFC-Export ArchiCAD
 
 Modellaufbau in ArchiCAD
@@ -15,7 +17,8 @@ Berücksichtigen Sie folgende Eigenschaften beim Modellaufbau:
 -	Struktur der mehrschichtigen Bauteile/Profile (Kern, Bekleidung, Andere)
 -	Tragende Funktion der Elemente (Nicht tragende Elemente, Tragende Elemente)
 
-IFC-Export
+**IFC-Export**
+
 Da es sich beim IFC-Export um eine Weitergabe von intelligenten 3D-Elementen handelt, sollten Sie vor dem Export ins 3D-Fenster wechseln. Hier gilt es, aus dem entwickelten Architekturmodell über Filter ein Exportmodell für den Holzbauer zu erzeugen.
 Nutzen Sie dazu die folgenden Funktionen, um das Architekturmodell ohne Räume, Möblierung und Umgebung als Rohbaumodell anzeigen zu können. Der Holzbauplaner benötigt lediglich die herausgefilterten Elemente vom Architekturmodell.
 
@@ -133,7 +136,7 @@ Für die korrekte Gliederung zusammengesetzter Bauteile (Elementbau) im IFC-Sche
 -	Hüllkörper sind für den Export sichtbar (Informationen des Hüllkörpers werden exportiert, (zwingend für eine korrekte IFC-Hierarchie)
 -	Hüllkörper beinhaltet die korrekte IFC-Entität (Wall, Opening, Slab, Roof, …).
  
- 
+
 ![Screenshot](img/wand.png){: style="width:600px"} 
 
  
