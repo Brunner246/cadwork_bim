@@ -133,8 +133,9 @@ Für die korrekte Gliederung zusammengesetzter Bauteile (Elementbau) im IFC-Sche
 -	Hüllkörper sind für den Export sichtbar (Informationen des Hüllkörpers werden exportiert, (zwingend für eine korrekte IFC-Hierarchie)
 -	Hüllkörper beinhaltet die korrekte IFC-Entität (Wall, Opening, Slab, Roof, …).
  
-
+ 
 ![Screenshot](img/wand.png){: style="width:600px"} 
+
  
 **Kontrolle der IFC-Datei (Quality Gate)**
 
