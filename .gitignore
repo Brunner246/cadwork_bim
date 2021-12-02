@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+mkdocs copy.yml
+.gitignore
+venv.zip

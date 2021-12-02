@@ -1,6 +1,8 @@
+# BCF
+
 ## Was ist das BIM-Collaboratin-Format (BCF)? 
 
-![Backup Text](img/bcf.jpeg "https://b2b.partcommunity.com/community/pin/35477/bcf-bim-collaboration-format-explained"){: style="width:700px"}
+![localized image](../img/bcf.jpeg "https://b2b.partcommunity.com/community/pin/35477/bcf-bim-collaboration-format-explained"){: style="width:700px"}
 
 BCF steht als Abkürzung für BIM Collaboration Format und ist ein offenes Datenformat für die modellbasierte Kommunikation. 
 
@@ -47,12 +49,12 @@ Den BCF-Manager öffnen Sie direkt über das BIM_Management-Tool, oder über Fen
 Es wird eine Aufnahme der aktuellen Ansicht erstellt. Diese beinhaltet neben dem eigentlichen Screenshot auch einen Viewpoint (Kamerakoordinaten im 3D-Raum), die Sichtbarkeiten der Elemente sowie den Status der aktiven
 Bauteile.
 
-![GIF](img/issue.gif){: style="width:900px"}
+![localized gif](../img/issue.gif){: style="width:900px"}
 
 Den BCF-Manager können Sie alternativ auch nativ unter cadwork Anwendern nutzen. Somit können Sie z.B. Änderungen im Projekt protkollieren. 
 
 
 [^5]: [BIMcert](https://technical.buildingsmart.org/standards/bcf/)
 
-![Screenshot](img/bcf_manager.png)
+![localized image](../img/bcf_manager.png)
 

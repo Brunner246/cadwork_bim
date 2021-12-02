@@ -1,4 +1,6 @@
-# Cadwork Holz AG 
+# About
+
+## Cadwork Holz AG
 
 Industriestrasse 28, 9100 Herisau <br>
 Tel.: +41 71 242 00 30 <br>
@@ -27,3 +29,4 @@ Alle reden vom digitalen Bauen – wir zeigen Ihnen wie. Erwerben Sie die Method
 
 [BIM Praxis – Grundlagen mit buildingSMART Zertifikat](https://www.bfh.ch/de/weiterbildung/cas/digital-planen-bauen-nutzen/){target=_blank} :mortar_board: <br>
 Der Kurs vermittelt alle Grundlagen des digitalen Bauens. Vermittelt werden die BIM-Methodik, die Begriffe und Abkürzungen und ihre Semantik, das Use-Case-Management sowie praxisorientierte Anwendungen.
+

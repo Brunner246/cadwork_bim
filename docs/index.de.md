@@ -1,5 +1,5 @@
 # Cadwork BIM
-![Screenshot](img/cadwork_bim.png){: style="width:700px"}
+![localized image](img/cadwork_bim.png){: style="width:700px"}
 
 Die Digitalisierung in der Baubranche nimmt immer mehr Fahrt auf. Die Methode Building Information Modeling (BIM) dient dabei als Einstieg. Der transparente Prozess mit einer hohen Qualität an objektbeschreibenden Informationen und Quality Gates bildet die Grundlage für digitale Innovationen. Neben technischen Aspekten fordert die Methode einen **Kulturwechsel in der Baubranche**. Projektbeteiligte führen transparente Informationsflüsse und liefern gezielt Daten zum definierten Zeitpunkt in der geforderten Qualität. BIM führt zu Transparenz in Kommunikation und Zusammenarbeit. Es ist absehbar, dass sich in wenigen Jahren, wie bei der Einführung von CAD im letzten Jahrtausend, der gesamte Abwicklungsprozess über den Lebenszyklus dahingehend anpassen wird, dass die BIM-Methode eine zentrale Rolle einnehmen wird.
 
@@ -8,7 +8,7 @@ Die Digitalisierung in der Baubranche nimmt immer mehr Fahrt auf. Die Methode Bu
 ### W-Fragen :bulb:<br>
 **W**er benötigt, **w**ann, von **w**em, **w**ie sowie zu **w**elchem Zweck **w**elche Informationen in **w**elchem Datenformat? 
 
-![Backup Text](img/steinzeit.png "https://www.pinterest.ch/borgman_/_saved/ Wissen IFC"){: style="width:700px"}
+![localized image](img/steinzeit.png "https://www.pinterest.ch/borgman_/_saved/ Wissen IFC"){: style="width:700px"}
 
 ## Begrifflichkeiten
 Akronym | Begriff                           | Bedeutung
@@ -41,7 +41,7 @@ Die Entwicklungsstufen von BIM geben dahingehend eine klare Einstufung ab
 * `closedBIM`: geschlossene Lösung, Verwendung einer Software(familie) 
 * `openBIM`: offene Lösung, Austauschbarkeit über verschiedene BIM-fähige Software-Produkte
 
-![Screenshot](img/entwicklungsstufen.png){: style="width:700px"}
+![localized image](img/entwicklungsstufen.png){: style="width:700px"}
 
 ### openBIM[^1]
 
@@ -84,23 +84,7 @@ OpenBIM Daten müssen für alle **lesbar** für viele **kommentierbar** und für
 Damit BIM erfolgreich in einem Projekt implementiert werden kann, müssen verschiedene Faktoren berücksichtigt werden. 
 Denn nur durch Berücksichtigung der folgenden Faktoren kann ein BIM Projekt erfolgreich umgesetzt werden. 
 
-``` mermaid
-flowchart LR
-    id1((Menschen))
-    id2((Prozesse))
-    id3((Normen))
-    id4((Software))
-    id5(( Daten ))
-    id1 o--o id2
-    id2 o--o id3
-    id3 o--o id4
-    id4 o--o id5
-    style id1 fill:#f9f,stroke:#333,stroke-width:4px
-    style id2 fill:#b9cced,stroke:#333,stroke-width:4px
-    style id3 fill:#ffc58a,stroke:#333,stroke-width:4px
-    style id4 fill:#ad9d9d,stroke:#333,stroke-width:4px
-    style id5 fill:#c9b6e4,stroke:#333,stroke-width:4px
-```
+![](https://mermaid.ink/img/eyJjb2RlIjoiIGZsb3djaGFydCBMUlxuICAgIGlkMSgoTWVuc2NoZW4pKVxuICAgIGlkMigoUHJvemVzc2UpKVxuICAgIGlkMygoTm9ybWVuKSlcbiAgICBpZDQoKFNvZnR3YXJlKSlcbiAgICBpZDUoKCBEYXRlbiApKVxuICAgIGlkMSBvLS1vIGlkMlxuICAgIGlkMiBvLS1vIGlkM1xuICAgIGlkMyBvLS1vIGlkNFxuICAgIGlkNCBvLS1vIGlkNVxuICAgIHN0eWxlIGlkMSBmaWxsOiNmOWYsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweFxuICAgIHN0eWxlIGlkMiBmaWxsOiNiOWNjZWQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweFxuICAgIHN0eWxlIGlkMyBmaWxsOiNmZmM1OGEsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweFxuICAgIHN0eWxlIGlkNCBmaWxsOiNhZDlkOWQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweFxuICAgIHN0eWxlIGlkNSBmaWxsOiNjOWI2ZTQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2UsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjpmYWxzZX0)
 
 
 ### Informationsanforderung
@@ -113,11 +97,11 @@ beschreibt den inhaltlichen (alphanumerischen) Informationsgrad eines Modells. D
 
 Level of Geomtry                | Level of Information                           
 --------------------------------|------------------------------
-![Screenshot](img/triangle.svg) | ![Screenshot](img/info.svg)
+![localized image](img/triangle.svg) | ![localized image](img/info.svg)
 
 Die LOG- und LOI-Definitionen sind individuell und unabhängig vorzunehmen. Es ist zu beachten, dass die LOD-Definition nicht die Summe von LOG und LOI ist, somit nicht LOD = LOI + LOG lauten kann. LOI- und LOG-Definitionen sind voneinander unabhängig, aber projektspezifisch hinsichtlich Ziele und entsprechenden Anwendungen bzw. den hierfür benötigten Informationen durch die Beteiligten, zu definieren.
 
-![Backup Text](img/LOD.png "https://bauen-digital.ch/assets/Downloads/de/180222-BdCH-SwissBIM-LOIN-Verstaendigung-web.pdf"){: style="width:700px"}
+![localized image](img/LOD.png "https://bauen-digital.ch/assets/Downloads/de/180222-BdCH-SwissBIM-LOIN-Verstaendigung-web.pdf"){: style="width:700px"}
 
 ## ModelViewDefintion MVD
 Zitiert aus bsI Standards Model View Definition (MVD)[^3] <br>
@@ -138,7 +122,7 @@ eine MVD verwendet Entitäten aus IFC, um einen Austauschstandard für einen bes
 [^3]: [MVD-buildingsmart](https://www.buildingsmart.org/standards/bsi-standards/model-view-definitions-mvd/)
 
 
-![Backup Text](img/mvd.jpg "https://biblus.accasoftware.com/de/model-view-definition-und-bim-datenaustausch/"){: style="width:700px"}
+![localized image](img/mvd.jpg "https://biblus.accasoftware.com/de/model-view-definition-und-bim-datenaustausch/"){: style="width:700px"}
 
 ## Struktur IFC Datenschema
 Zitiert aus dem BIMcert Handbuch 2021[^4] <br>
@@ -149,7 +133,7 @@ Die IFC-Spezifikation verwendet drei Strukturen: Verortungsstruktur, Funktionale
 Die Verortungsstruktur definiert in IFC die räumliche Struktur eines Bauwerks. Diese deklariert Bauplätze, darauf befindliche Bauwerke, darin befindliche Geschosse sowie die in einem Geschoss vorhandenen Räume.
 Die Abbildung von Bauwerken erfolgt innerhalb der funktionalen Struktur durch eine Zerlegung in einzelne funktionale Elementklassen: z.B. Wände, Decken, Stützen, Türen oder Fenster. Jedes Element (Elementinstanz) erhält eine eindeutige Kennung (GUID).
 
-![Backup Text](img/BIMcert.png "BIMcert Handbuch Seite 32"){: style="width:700px"}
+![localized image](img/BIMcert.png "BIMcert Handbuch Seite 32"){: style="width:700px"}
 
 Jede funktionale Elementklasse ist für die Abbildung ihres Funktionsbereichs optimiert. Dafür trägt sie einen standardisierten Grundstock an Merkmalen zur Beschreibung relevanter Eigenschaften (Parameter) sowie ihrer typischen Geometrie (Attribute). Die Merkmale werden in Gruppen organisiert (Property-Sets). Jede Elementklasse trägt ein typisches Pset, das die wesentlichsten Merkmale trägt. Dieses Pset wird mit dem Suffix »Common« bezeichnet z.B. Pset_WallCommon oder Pset_DoorCommon.
 Alle funktionalen Elemente werden an Geschosse verknüpft und sind dadurch auch einem Bauwerk zugehörig. Neben alphanumerischen (Attribute, Parameter und Merkmale) und geometrischen Informationen enthält eine IFC-Datei auch Objektbeziehungen.
@@ -179,56 +163,58 @@ Stachowiak, 1973:
 Modelle sind nach den im Modellierungsplan definierten Regeln zu erstellen. [BIM Informations-Lieferungs-Handbuch (Grundlagen)](https://baustein.xella.ch/media/downloads/BIM-Grundlagen-Informations-Lieferungs-Handbuch-3.pdf)
 
 
-![Backup Text](img/rules.png "https://baustein.xella.ch/media/downloads/BIM-Grundlagen-Informations-Lieferungs-Handbuch-3.pdf"){: style="width:700px"}
+![localized image](img/rules.png "https://baustein.xella.ch/media/downloads/BIM-Grundlagen-Informations-Lieferungs-Handbuch-3.pdf"){: style="width:700px"}
 
-![Screenshot](img/rules2.png){: style="width:700px"}
+![localized image](img/rules2.png){: style="width:700px"}
 
 Je genauer die [Modellierungsregeln](ifc.md#IFC Modellaufbau & Export aus cadwork) umgesetzt werden, umso reibungsloser verläuft die modellbasierte Zusammenarbeit. Probleme bei der Zusammenführung der Modelle können durch die definierten Regeln umgangen werden und eine effiziente Zusammenarbeit wird ermöglicht. 
 
-![Screenshot](img/modelle.png){: style="width:700px"}
+![localized image](img/modelle.png){: style="width:700px"}
 
 ## Relative Positionierung
 Die geometrische Modellierung im IFC-Datenmodell orientiert sich stark an der Verwendung eines lokalen Koordinatensystems.
 So wird beispielsweise die Platzierung einer Stütze nicht global, sondern bezogen auf das Koordinatensystem des jeweiligen Stockwerks festgelegt.
 Die Koordinaten der Stockwerke (IfcBuildingStorey) werden wiederum in Bezug auf das Koordinatensystem des Gebäudes (IfcBuilding) modelliert. Die Koordinaten des Gebäudes werden wiederum in Bezug auf das Koordinatensystem des Geländes (IfcSite) modelliert.
 
-![Screenshot](img/hierachy.png){: style="width:700px"}
+![localized image](img/hierachy.png){: style="width:700px"}
 
 ## IFC Entitäten
 Eine IFC-Klasse ist ein **eindeutig identifiziertes Objekt** im IFC-Datenmodell. Abhängig von der Klassenzuweisung und der Typendefinition erhält das Objekt innerhalb des IFC-Schemas bestimmte **Standardattribute** und **Abhängigkeiten**. 
 Die Wahl der richtigen Klasse beim IFC-Export ist daher sehr wichtig: Wird eine Wand nicht der Klasse IfcWall zugewiesen, bekommt sie nicht alle benötigten Attribute, um eindeutig beschrieben zu werden. Dann wird sie auch von anderen Programmen für die Koordination oder Auswertung nicht richtig interpretiert.
 
-![Backup Text](img/IfcWall.jpg "https://bimsource.de/was-ist-ifc-industry-foundation-classes/"){: style="width:700px"}
+![localized image](img/IfcWall.jpg "https://bimsource.de/was-ist-ifc-industry-foundation-classes/"){: style="width:700px"}
 
 ## PropertySet
 Das IfcPropertySet ist ein **Container, der Eigenschaften innerhalb eines „Eigenschaftsbaums“ enthält**. Die Eigenschaften werden in Gruppen organisiert (sog. Psets = Property-Sets). Jede Elementklasse trägt ein typisches Pset, welches die wesentlichsten Merkmale trägt. Dieses Pset wird mit dem Suffix »Common« bezeichnet z.B. Pset_WallCommon oder Pset_BeamCommon.
 Darüber hinaus kann jeder benutzerdefinierte Eigenschaftssatz erfasst werden. Eigenschaftssätze, die nicht als Teil der IFC-Spezifikation deklariert sind, müssen einen Name-Wert haben, der nicht das Präfix "Pset_" enthält. 
 
-![Backup Text](img/pset.png "https://bimsource.de/bim-informations-lieferungs-handbuch-ilh/"){: style="width:700px"}
+![localized image](img/pset.png "https://bimsource.de/bim-informations-lieferungs-handbuch-ilh/"){: style="width:700px"}
 
 ## Geometrie
+
 Beginnend mit der 2,5D-Funktionalität, existiert schon seit über 30 Jahren die Fähigkeit dreidimensionale Objekte mit CAD-Programmen darzustellen. Um dreidimensionale Körper und nicht nur Flächen in einem Raum darstellen zu können, kamen die Technologien der BREP-, sowie die CSG-Methode dazu. 
-Das IFC Schema unterstützt verschiedene Methoden, um Geometrie abzubilden.
+Das IFC Schema unterstützt verschiedene Methoden, um Geometrie abzubilden. Je nach verwendeter Geometriemethode, werden unterschiedliche Ergebnisse erreicht. 
+Die Qualität und Methode der Geometrie entscheidet über die Weiterverwendbarkeit der Elemente in cadwork. 
 
 *	die explizite Modellierung mit der B-Rep Methode ((Boundary Representation), Begrenzungsflächenmodell) ist eine Geometriemethode, um beliebige 3D-Geometrien aus Begrenzungsflächen zu erstellen, die eine Hüllgeoemtrie vollständig umschliessen. Bei der B-Rep Methode wird immer nur das Ergebnis der Erstellung eines Körpers über die Begrenzungsflächen gespeichert.   
     *	das Volumen wird über die begrenzenden Flächen beschrieben
     *	komplexe Formen werden mit einer hohen Anzahl Facetten beschrieben
     *   Darstellung nicht ebener Flächen -> NURBS (nichtuniforme rationale B-Splines). Diese Methode erlaubt das Konstruieren von Freiformflächen. 
 
-![Screenshot](img/brep.png){: style="width:700px"}
-![Screenshot](img/brep_plate.png){: style="width:700px"}
+![localized image](img/brep.png){: style="width:700px"}
+![localized image](img/brep_plate.png){: style="width:700px"}
 
 * die implizite Modellierung CSG ((Constructive Solid Geoemtry), Extrusionen, Rotationen) ist eine Geoemetriemethode, um beliebige 3D-Geometrien aus Operationen zwischen Basiskörpern zu erstellen. 
     * das Volumen wird über eine Abfolge von Konstruktionsschritten beschreiben. Die Modellierungsschritte zum Resultat werden gespeichert (history). 
     *  Beim Konvertieren zu cadwork Elementen werden die booleschen Operationen ausgeführt. Die resultierende Geometrie kann, wenn Faktoren wie die Genauigkeit zusammenpassen, für z.B. die Produktion genutzt werden. 
     * CSG
 
-![Screenshot](img/csg.png){: style="width:700px"}
-![Screenshot](img/csg_plate.png){: style="width:700px"}
+![localized image](img/csg.png){: style="width:700px"}
+![localized image](img/csg_plate.png){: style="width:700px"}
 
 * Extrusion
     * Fläche (Area) wird entlang eines Richtungsvektors extrudiert
 
-![Backup Text](img/extrusion.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm"){: style="width:700px"}
+![localized image](img/extrusion.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/ifcgeometricmodelresource/lexical/ifcextrudedareasolid.htm"){: style="width:700px"}
 
 

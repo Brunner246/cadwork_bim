@@ -1,114 +1,4 @@
-Die schnell zunehmende technische Entwicklung im Bauwesen führt zu einer grossen Nachfrage sowie Forderungen eines digitalen Datenaustauschs von Gebäudemodellen.
-Cadwork bietet Ihnen ab der Version 27 umfängliche Möglichkeiten im Datenaustausch mit dem IFC- und BCF-Schema. In diesem Dokument wird jedoch ausschliesslich die Version 28 (2021) behandelt. 
-
-Cadwork ist für den Datenaustausch im Schema IFC2x3 zertifiziert.
-
-![Screenshot](img/certificate.jpg) 
-
-Im Umgang mit IFC-Daten sind das Dateischema, die Version des Schemas, die [Model-View-Definition](index.md#ModelViewDefintion MVD) sowie das Wissen um den Aufbau der Datei entscheidend. In den nächsten Abschnitten wird der Umgang mit dem IFC-Schema in cadwork erläutert. 
-
-# IFC Import in cadwork
-
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/aq0Y8BCePD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
-**Dateien hinzufügen** <br>
-IFC Dateien werden via BIM-Management-Tool in cadwork importiert. 
-Das BIM Management Tool (BMT) ist für die Arbeit nach der BIM-Methode das zentrale Werkzeug. Von hier können alle zugehörigen Dialoge geöffnet und alle Einstellungen
-getätigt werden. Öffnen Sie den BMT entweder über die Schaltfläche Geschoss/BMT in der Kopfzeile oder über das Menü; Fenster –> BIM Management Tool.
-IFC- Dateien können entweder über das  "+" Symbol, oder mit «Drag and Drop» hinzugefügt werden. 
-
-![GIF](img/import.gif){: style="width:900px"}
-
-Importierte Elemente werden als **"Exchange-Objekt"** eingelesen, welches nur der Visualisierung dient. Sie können nicht in einer 2D-Ebene dargestellt oder in den Planausgaben exportiert werden. Sie können auch nicht bearbeitet oder zur Kollisionskontrolle genutzt werden.
-Mit «Aktivieren nach Attribut» können die Bauteile selektiert werden. So können Sie zum Beispiel die ++ctrl+"A"++ -Funktionen nutzen, um nur die Exchange-Objekte nach 
-
-* IFC-Gebäude       ++ctrl+"A"+shift+"A"++ 
-* IFC-Geschoss      ++ctrl+"A"+shift+"S"++
-* IFC-Typ           ++ctrl+"A"+shift+"T"++
-* Name              ++ctrl+"A"+"N"++
-* Material          ++ctrl+"A"+"M"++
-* Farbe             ++ctrl+"A"+"C"++ 
-
-zu aktivieren, die Sie als cadwork Bauteile erzeugen möchten.
-
-
-## Globaler - lokaler Nullpunkt
-
-Um georeferenzierte Modelle in der geforderten Genauigkeit von cadwork halten und bearbeiten zu können, wird beim Import von georeferenzierten IFC Dateien der interne Nullpunkt verschoben. 
-Zu weit vom Nullpunkt entfernte Elemente würden zu Genauigkeitsproblemen führen. 
-Nach Bestätigung der Verschiebung, wird der Verschiebungsvektor intern gespeichert und die globalen Koordinaten eingetragen (Einstellungen -> Globaler Nullpunkt)
-
-![Screenshot](img/shift.png){: style="width:400px"}
-
-Beim Export des geforderten Modellinhalts aus cadwork wird der Verschiebungsvektor berücksichtigt und der Modellursprung an derselben Stelle platziert. 
-
-![Screenshot](img/nillpoint.png){: style="width:400px"}
-
-
-
-## Struktur - Ansichten
-
-Mit einem Rechtsklick auf das Projekt öffnet sich das Kontext Menü, welches die möglichen Optionen aufzeigt. 
-Alternativ zur hierarchischen Ansicht, kann in die Ansicht nach IFC Typ gewechselt werden. 
-
-![GIF](img/view.gif){: style="width:900px"}
-
-Mit einem Rechtsklick im BMT öffnet sich das Kontext-Menü über welches die Importeinstellungen vorgenommen werden können.
-
-![GIF](img/imp_options.gif){: style="width:900px"}
-
-**Einstellungsmöglichkeiten**
-
-1.	Öffnungen einschneiden
-    * Definiert ob Öffnungen hart/weich eingeschnitten werden sollen, oder ob das IfcOpeningElement zu einem Element mit dem Typ Öffnung generiert werden soll.
-2.	Achssystem regenerieren
-    * Das Achssystem wird algorithmisch neu berechnet und ausgerichtet.
-3.	Korrigieren Facetten
-    * Unnötige Facetten werden, wenn möglich, korrigiert
-4.	IfcElementAssembly (zusammengesetztes Element)
-    * Die IfcElementAssembly repräsentiert Elementbaugruppen, die aus mehreren Elementen zusammengesetzt sind.
-    * z. B. Fachwerkbinder und verschiedene Arten von Rahmen, können durch die Entität IfcElementAssembly dargestellt werden. 
-5.	Architektur-Hüllen erzeugen
-    * Generieren eines Hüllkörpers (Wand, Decke, Dach)
-
-## Bauteile erzeugen
-
-Importierte Bauteile lassen sich zu cadwork Elementen konvertieren. Somit können diese für die Planung weitergenutzt werden (Referenz). <br>
-
-!!! info " **Tipp!** <br>Prüfen Sie den Inhalt der erhaltenen Daten immer zuerst in einem Viewer (**QualityGate**) anschliessend sind die importierten Daten in cadwork sorgfältig auf ihre Richtigkeit (Genauigkeit, Informationen) zu kontrollieren"
-
-IFC Viewer -> ([FZK-Viewer](https://www.iai.kit.edu/1302.php){target=_blank}, [Liste-verschiedener-Viewer](https://bim-me-up.com/die-popularsten-ifc-viewer/){target=_blank}) <br>
-
-Die Konvertierung kann über **Modifizieren -> als Bauteil erzeugen** vorgenommen, oder über das Kontext Menü im BMT. 
-Gültig Elemente werden nach ausführen der Konvertierung zu cadwork Elementen umgewandelt. Ungültige Elemente können nicht zu nativen cadwork Elementen konvertiert werden. Ungültig heisst, wenn z.B. die Geometrie inkorrekt beschrieben ist. 
-Kontrollieren Sie die Daten sorgfältig auf ihre Richtigkeit (Genauigkeit, Informationen). 
-
-**Geometriemanipulation**
-
-Cadwork bietet Ihnen Werkzeuge für Geometriemanipulationen an. Über **Modifizieren -> Optionen** sind die möglichen Optionen zur Geometriemanipulation der Elementtypen ersichtlich. 
-Wenn z.B. die Geometrie in der IFC-Datei über Flächen beschrieben ist (SurfaceModel -> kein Volumen), können Sie diese zu einem Volumen modifzieren (**Modifizieren -> Optionen -> Mehrere Flächen zu Volumen**). 
-
-## IFC Attribut Mapper - PropertyMapping
-
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DKCo9oiGMUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
-Der IFC Attribut Mapper ermöglicht das Mappen von Eigenschaften (Properties) aus der IFC Datei in die Attribute von cadwork Elementen. Der Attribut Mapper wird direkt aus dem Kontext Menü des BMT aufgerufen. 
-
-![GIF](img/mapping.gif){: style="width:900px"}
-
-**FromEntity** <br>
-Klasse, auch Entität, Elementklasse, Entitytyp:<br> 
-Eine Entität ist laut IFC-Definition eine Informationsklasse, die durch gemeinsame Attribute und Einschränkungen definiert ist. Für jeden Entitytyp werden Attribute sowie Beziehungen zu anderen Entitytypen festgelegt. Das objektorientierte Konzept der Vererbung wird umgesetzt. Dadurch werden Attribute und Beziehungen an Subtypen weitergegeben.
-
-!!! Info
-    Führen Sie das Mapping standardmässig **FromEntity** aus. **FromType** soll nur gemappt werden, wenn bewusst jene Eigenschaften gefragt sind.<br> Objekttypen werden bei Software die mit Bauteilbibliotheken arbeiten verwendet. Diesen Objekten können Attribute und Eigenschaften zugewiesen werden. Die Objekte in der Bauteilbibliothek dienen beim Modellieren als Schablone. Die Eigenschaften vom Objekttyp (Katalogelement) können sich vom Entität-Typ (modifizierte Eigenschaften) unterscheiden. 
-**FromType** <br>
-Ein Objekttyp ist ähnlich der Klasse ebenfalls eine Art Schablone, die gemeinsame Charakteristiken mehrerer Instanzen vereint. Dabei werden jedoch bestimmte Grundparameter, die für wiederkehrende Bauteile gleichbleiben, bereits vor der eigentlichen Instanziierung festgelegt. <br>
-In IFC wird das Konzept der Objekttypen bereitgestellt, um häufig wiederkehrende Bauteile effizient beschreiben zu können. Dafür wird ein wiederverwendbares Muster vordefiniert, also eine Art »Schablone«. Die Objekttypen können Attribute und Properties definieren, die dann automatisch an die verknüpften Objekte weitergegeben werden. Dies kann als Vorinstanziierung bezeichnet werden. Bei der tatsächlichen Instanziierung der Objekttypen werden nur noch Daten, wie etwa die räumliche Lage oder die Beziehungen zu anderen Objekten, festgelegt. Diese Daten können nicht über Objekttypen vorgegeben werden.
+# Modellierung
 
 ## IFC Modellaufbau & Export aus cadwork
 
@@ -165,7 +55,7 @@ Weitere IFC-Typen sind unter Modifizieren -> Attribute -> BIM -> IFC Typ wählba
 Die dokumentierten IFC-Typen finden Sie in der IFC Dokumentation von building-smart <br> [IFC-Entities Auflistung](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/){target=_blank} :point_left: 
 
 IFC-Typ Zuweisungen unter Benutzereinstellungen -> Liste der Attribute vordefinieren
-![GIF](img/type.gif){: style="width:900px"}
+![localized image](../img/type.gif){: style="width:900px"}
 
 ## IfcProject | IfcSite
 
@@ -173,18 +63,18 @@ Die Bezeichnung des IfcProject sowie der IfcSite sind in den Projektdaten vorzun
 Projektdaten -> Allgemein -> **Projektname** (IfcProject)<br>
 Projektdaten -> Projektort -> **Ortsbeschreibung Baustelle** (IfcSite)
 
-![Screenshot](img/site.png)
+![localized image](../img/site.png)
 
 ## Geschossmanager
 
 Viele CAD-Software benötigen eine Geschossstruktur mit Höhenangaben. In den Geschosseinstellungen können daher die Höhen definiert werden. 
 Die Höhe ist, IFC-konform, immer als Oberkante Rohfussboden zu sehen (als Attribut IfcBuildingstorey: Elevation).
 
-![Screenshot](img/storey_cw.png){: style="width:300px"}
+![localized image](../img/storey_cw.png){: style="width:300px"}
 
 Ein Geschoss umfasst jeweils die Decke und die sich "darauf befindenden" Bauteile (Wände, Stützen, etc.). 
 
-![Backup Text](img/storey_bs.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcbuildingstorey.htm"){: style="width:600px"}
+![localized image](../img/storey_bs.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcbuildingstorey.htm"){: style="width:600px"}
 
 **Geschoss erstellen**
 
@@ -194,7 +84,7 @@ Ein Geschoss umfasst jeweils die Decke und die sich "darauf befindenden" Bauteil
     - [ ] geforderte Eingabefelder befüllen  
     - [x] Gebäude - Geschoss erstellt
 
-![GIF](img/storey.gif){: style="width:900px"}
+![localized image](../img/storey.gif){: style="width:900px"}
 
 **Elemente zu Gebäude / Geschoss zuweisen** <br>
 
@@ -211,7 +101,7 @@ Option B:
 
 cadwork schreibt standardmässig das PropertySet **Cadwork3dProperties**. In diesem PropertySet werden alle verwendeten Attribute sowie Userattribute erfasst. <br>
 
-![Screenshot](img/cw_pset.png)
+![localized image](../img/cw_pset.png)
 
 Für den **"Advanced User"** gibt es die Möglichkeit eigene Psets anzulegen. Dies können entweder Standard-Psets wie z.B. das Pset_BeamCommon, oder benutzerdefinierte wie z.B. "Eigenschaften_Holzbau_XY" sein. 
 Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das Property LoadBearing auf User10 sein. Die für das Pset benötigten Eigenschaften werden dann im Exportdialog unter dem Register "Pset-Defintionen" zu einem Set zusammengefasst. 
@@ -231,24 +121,24 @@ IfcLabel                | beliebiger Text STRING                                
 
 
 
-![GIF](img/pset.gif){: style="width:900px"}
+![localized image](../img/pset.gif){: style="width:900px"}
 
 ## Detaillierung
 
 Die Detaillierung des Modellinhalts wird über die enthaltenen Checkboxen gesteuert. 
 Achten Sie darauf, dass nur der geforderte Modellinhalt sowie Detaillierungsgrad exportiert wird.
-Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie die Erläuterung im Register [BuildingInformationModeling](index.md#Geometrie) unter dem Tab Geometrie. 
+Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie die Erläuterung im Kapitel [Geometrie](../index.de.md#geometrie) .
 
-![Screenshot](img/detail.png){: style="width:900px"}
+![localized image](../img/detail.png){: style="width:900px"}
 
 ## Elemente
 
 Sind in einer 3D-Datei Architekturelemente mit Bauteilen angelegt sowie jeweils in Baugruppen oder Bauuntergruppen eingeteilt, so werden die zugehörigen Elemente mit dieser Option zusammengefasst, als z.B. IfcWall, in die IFC-Datei
 exportiert.
-![Screenshot](img/elemente.png){: style="width:900px"}
+![localized image](../img/elemente.png){: style="width:900px"}
 
 Werden Architekturelemente nach Baugruppen oder Bauuntergruppen zusammengefasst, werden die Hüllen (Holzrahmenbau- und Blockbauhüllen) nicht mit ausgegeben. Dies kommt daher, dass die einzelnen Bauteile zusammengefasst die Wand, Decke oder das Dach darstellen.
-![Backup Text](img/wall.png "https://standards.buildingsmart.org/IFC/DEV/IFC4_3/RC1/HTML/schema/ifcsharedbldgelements/lexical/ifcwallelementedcase.htm"){: style="width:400px"}
+![localized image](../img/wall.png "https://standards.buildingsmart.org/IFC/DEV/IFC4_3/RC1/HTML/schema/ifcsharedbldgelements/lexical/ifcwallelementedcase.htm"){: style="width:400px"}
 
 **Hüllelemente exportieren**
 
@@ -265,15 +155,7 @@ Für den Import sowie den Export unterstützt cadwork die Schemas IFC 2x3 und IF
 
 Die IFC4-Version kombiniert eine Reihe von Funktionserweiterungen mit einer umfassenden Überarbeitung und Verbesserung der bestehenden IFC-Spezifikation. Das übergeordnete Ziel ist es, die Konsistenz im gesamten IFC-Schema zu verbessern, den für die Bestückung eines IFC-Datensatzes erforderlichen Modellfussabdruck zu reduzieren und die aus der aktuellen Implementierung und Nutzung gewonnenen Erkenntnisse anzuwenden. IFC4 wurde als die nächste Grundlage für die IFC-gestützte Interoperabilität von Gebäudedatenmodellen als Standard für Open BIM entwickelt.[^6]
 
-![GIF](img/version.gif){: style="width:900px"}
-
-## ArchiCAD - Cadwork
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bbDkPNFKdl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
-## OpenBIM - Workflow-Sheets
-[OpenBIM Workflow-Sheets](https://openbim.ch/workflow-sheets/){target=_blank} :point_left:
+![localized image](../img/version.gif){: style="width:900px"}
 
 
 [^6]: [ifc2x3 vs ifc4](https://standards.buildingsmart.org/IFC/DEV/IFC4_2/FINAL/HTML/annex/annex-f/ifc2x3-to-ifc4/index.htm)
