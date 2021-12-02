@@ -127,7 +127,7 @@ IfcLabel                | beliebiger Text STRING                                
 
 Die Detaillierung des Modellinhalts wird über die enthaltenen Checkboxen gesteuert. 
 Achten Sie darauf, dass nur der geforderte Modellinhalt sowie Detaillierungsgrad exportiert wird.
-Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie die Erläuterung im Kapitel [Geometrie](../index.de.md#geometrie) .
+Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie die Erläuterung im Kapitel [Geometrie](../index.de.md#geometrie).
 
 ![localized image](../img/detail.png){: style="width:900px"}
 

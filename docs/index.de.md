@@ -167,7 +167,8 @@ Modelle sind nach den im Modellierungsplan definierten Regeln zu erstellen. [BIM
 
 ![localized image](img/rules2.png){: style="width:700px"}
 
-Je genauer die [Modellierungsregeln](ifc.md#IFC Modellaufbau & Export aus cadwork) umgesetzt werden, umso reibungsloser verläuft die modellbasierte Zusammenarbeit. Probleme bei der Zusammenführung der Modelle können durch die definierten Regeln umgangen werden und eine effiziente Zusammenarbeit wird ermöglicht. 
+
+Je genauer die [Modellierungsregeln]() umgesetzt werden, umso reibungsloser verläuft die modellbasierte Zusammenarbeit. Probleme bei der Zusammenführung der Modelle können durch die definierten Regeln umgangen werden und eine effiziente Zusammenarbeit wird ermöglicht. 
 
 ![localized image](img/modelle.png){: style="width:700px"}
 

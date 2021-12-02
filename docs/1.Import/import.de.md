@@ -152,8 +152,8 @@ In IFC wird das Konzept der Objekttypen bereitgestellt, um häufig wiederkehrend
 
 #### Ansicht nach IFC-Typ
 
-[Ansicht nach Typ](../import.de.md#Struktur-Ansichten)
+[Ansicht nach Typ](../index.de.md#das-modell)
 
 
 
-
+[Ansicht nach Typ](../1.Import/import.de.md#struktur-ansichten)
