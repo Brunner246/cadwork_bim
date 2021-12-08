@@ -118,7 +118,7 @@ Wenn die Bi-direktionale Aktivierung eingeschalten ist, springt der Zeiger in de
     * Durch anwählen der Radiobuttons können Sie definieren, ob das IfcElementAssembly in cadwork **Ohne Zusammenfassung, als Gruppe verbinden (empfohlen), oder mit einem Containerelement** erzeugt werden soll.
 
 5.	**Architektur-Hüllen erzeugen**
-    * Generieren eines Hüllkörpers um importierte Bauteile vom Typ Wand, Decke, Dach.
+    * Generieren eines Hüllkörpers, um importierte Bauteile vom Typ Wand, Decke, Dach.
         * Exchange-Objekt
         * ![localized image](../img/lignum1.png){: style="width:300px"}
         * konvertierte Elemente mit erzeugtem Hüllkörper
@@ -138,17 +138,9 @@ Wenn die Bi-direktionale Aktivierung eingeschalten ist, springt der Zeiger in de
 
 Der IFC Attribut Mapper ermöglicht das Mappen von Eigenschaften (Properties) aus der IFC Datei in die Attribute von cadwork Elementen. Der Attribut Mapper wird direkt aus dem Kontext Menü des BMT aufgerufen. 
 
-![localized image](../img/mapping.gif){: style="width:900px"}
+[Attribut Mapper im Detail](../1.Import/property_mapper.de.md)
 
-**FromEntity** <br>
-Klasse, auch Entität, Elementklasse, Entitytyp:<br> 
-Eine Entität ist laut IFC-Definition eine Informationsklasse, die durch gemeinsame Attribute und Einschränkungen definiert ist. Für jeden Entitytyp werden Attribute sowie Beziehungen zu anderen Entitytypen festgelegt. Das objektorientierte Konzept der Vererbung wird umgesetzt. Dadurch werden Attribute und Beziehungen an Subtypen weitergegeben.
-
-!!! Info
-    Führen Sie das Mapping standardmässig **FromEntity** aus. **FromType** soll nur gemappt werden, wenn bewusst jene Eigenschaften gefragt sind.<br> Objekttypen werden bei Software die mit Bauteilbibliotheken arbeiten verwendet. Diesen Objekten können Attribute und Eigenschaften zugewiesen werden. Die Objekte in der Bauteilbibliothek dienen beim Modellieren als Schablone. Die Eigenschaften vom Objekttyp (Katalogelement) können sich vom Entität-Typ (modifizierte Eigenschaften) unterscheiden. 
-**FromType** <br>
-Ein Objekttyp ist ähnlich der Klasse ebenfalls eine Art Schablone, die gemeinsame Charakteristiken mehrerer Instanzen vereint. Dabei werden jedoch bestimmte Grundparameter, die für wiederkehrende Bauteile gleichbleiben, bereits vor der eigentlichen Instanziierung festgelegt. <br>
-In IFC wird das Konzept der Objekttypen bereitgestellt, um häufig wiederkehrende Bauteile effizient beschreiben zu können. Dafür wird ein wiederverwendbares Muster vordefiniert, also eine Art »Schablone«. Die Objekttypen können Attribute und Properties definieren, die dann automatisch an die verknüpften Objekte weitergegeben werden. Dies kann als Vorinstanziierung bezeichnet werden. Bei der tatsächlichen Instanziierung der Objekttypen werden nur noch Daten, wie etwa die räumliche Lage oder die Beziehungen zu anderen Objekten, festgelegt. Diese Daten können nicht über Objekttypen vorgegeben werden.
+![localized gif](../img/mapping.gif){: style="width:900px"}
 
 #### Ansicht nach IFC-Typ
 

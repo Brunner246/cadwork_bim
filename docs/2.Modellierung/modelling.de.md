@@ -57,7 +57,7 @@ Die dokumentierten IFC-Typen finden Sie in der IFC Dokumentation von building-sm
 IFC-Typ Zuweisungen unter Benutzereinstellungen -> Liste der Attribute vordefinieren
 ![localized image](../img/type.gif){: style="width:900px"}
 
-## IfcProject | IfcSite
+## IfcProject - IfcSite
 
 Die Bezeichnung des IfcProject sowie der IfcSite sind in den Projektdaten vorzunehmen. <br>
 Projektdaten -> Allgemein -> **Projektname** (IfcProject)<br>
@@ -67,7 +67,7 @@ Projektdaten -> Projektort -> **Ortsbeschreibung Baustelle** (IfcSite)
 
 ## Geschossmanager
 
-Viele CAD-Software benötigen eine Geschossstruktur mit Höhenangaben. In den Geschosseinstellungen können daher die Höhen definiert werden. 
+Viele CAD-Software benötigen zusätzlich zur Geschossstruktur definierte Höhenangaben. In den Geschosseinstellungen können daher die Höhen definiert werden. 
 Die Höhe ist, IFC-konform, immer als Oberkante Rohfussboden zu sehen (als Attribut IfcBuildingstorey: Elevation).
 
 ![localized image](../img/storey_cw.png){: style="width:300px"}
@@ -97,65 +97,3 @@ Option B:
 
 * Bauteile aktivieren -> Modifizieren -> BIM -> Gebäude (Auswahl Gebäude) -> Geschoss (Auswahl Geschoss)
 
-## PropertySet
-
-cadwork schreibt standardmässig das PropertySet **Cadwork3dProperties**. In diesem PropertySet werden alle verwendeten Attribute sowie Userattribute erfasst. <br>
-
-![localized image](../img/cw_pset.png)
-
-Für den **"Advanced User"** gibt es die Möglichkeit eigene Psets anzulegen. Dies können entweder Standard-Psets wie z.B. das Pset_BeamCommon, oder benutzerdefinierte wie z.B. "Eigenschaften_Holzbau_XY" sein. 
-Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das Property LoadBearing auf User10 sein. Die für das Pset benötigten Eigenschaften werden dann im Exportdialog unter dem Register "Pset-Defintionen" zu einem Set zusammengefasst. 
-Im IFC Schema ist für jedes Property der Datentyp definiert. Damit die PropertySets korrekt exportiert werden, ist der Datentyp im Exportdialog zu bestimmen (Rechtsklick auf das Property). 
-
-Nachdem Sie die Schaltfläche Benutzerattribut hinzufügen gewählt haben, wählen Sie zunächst in der Dropdown-Liste die für das Pset gewünschten cadwork-Attribute aus der Dropdown-Liste aus. Zwingend für jedes Attribut ist ein zu verwendender Datentyp auszuwählen. 
-Nun wählen Sie den Namen, unter dem das Pset in der IFC-Datei zu finden sein soll. In der letzten Dropdown-Liste müssen Sie die IFC-Typen auswählen, für die dieses Pset ausgegeben werden soll. So ist es möglich, sehr differenziert Psets für
-unterschiedliche Bauteile anzulegen. Möchten Sie ein einmal angelegtes User Pset löschen, so können Sie am Ende der
-Zeile auf das Minus-Symbol klicken. Auf die selbst angelegten User Psets können Sie über die Schaltflächen Laden und Speichern immer wieder zugreifen.
-
-IfcDataType             | Defintion                                                 | Value         
-------------------------|-----------------------------------------------------------|-----------------------------------
-IfcInteger              | ganze Zahlen im positiven und negativen Bereich INTEGER   | 1,100,20        
-IfcReal	                | beliebige positive und negative Gleitkommazahlen REAL     | 0.1245, 1.458	                      
-IfcBoolean	            | Form mit zwei Zuständen 0 & 1 BOOLEAN                     | True/False, "1" oder "0", WAHR/FALSCH, Ja/Nein, Vrai, Faux
-IfcLabel                | beliebiger Text STRING                                    | Holz, Hersteller          
-
-
-
-![localized image](../img/pset.gif){: style="width:900px"}
-
-## Detaillierung
-
-Die Detaillierung des Modellinhalts wird über die enthaltenen Checkboxen gesteuert. 
-Achten Sie darauf, dass nur der geforderte Modellinhalt sowie Detaillierungsgrad exportiert wird.
-Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie die Erläuterung im Kapitel [Geometrie](../index.de.md#geometrie).
-
-![localized image](../img/detail.png){: style="width:900px"}
-
-## Elemente
-
-Sind in einer 3D-Datei Architekturelemente mit Bauteilen angelegt sowie jeweils in Baugruppen oder Bauuntergruppen eingeteilt, so werden die zugehörigen Elemente mit dieser Option zusammengefasst, als z.B. IfcWall, in die IFC-Datei
-exportiert.
-![localized image](../img/elemente.png){: style="width:900px"}
-
-Werden Architekturelemente nach Baugruppen oder Bauuntergruppen zusammengefasst, werden die Hüllen (Holzrahmenbau- und Blockbauhüllen) nicht mit ausgegeben. Dies kommt daher, dass die einzelnen Bauteile zusammengefasst die Wand, Decke oder das Dach darstellen.
-![localized image](../img/wall.png "https://standards.buildingsmart.org/IFC/DEV/IFC4_3/RC1/HTML/schema/ifcsharedbldgelements/lexical/ifcwallelementedcase.htm"){: style="width:400px"}
-
-**Hüllelemente exportieren**
-
-Ist der Export der Hüllen für weitere Schritte doch notwendig, können Sie durch Aktivieren dieser Option mit ausgegeben werden (nicht empfohlen). Massivwände, Massivdächer und Massivdecken werden immer exportiert, da diese als "reale" Bauteile vorliegen. Für Elemente dieses Typs ist das Aktivieren dieser Option nicht notwendig.
-
-**IfcElementAssembly**
-
-Die Entität IfcElementAssembly repräsentiert komplexe Elementbaugruppen, die aus mehreren Elementen zusammengesetzt sind. Dies können z.B. zusammengesetzte Stahlteile, Fachwerkbinder oder Treppen sein.
-In cadwork verwenden wir für eine ähnliche Gruppierung bereits seit langem Containerelemente. **Elemente, welche in Containerelementen zusammengefasst sind, werden in cadwork standardmässig als IfcElementAssembly exportiert.** Diese Funktion kann nicht beeinflusst werden. 
-
-
-## Unterstützte IFC-Schemas
-Für den Import sowie den Export unterstützt cadwork die Schemas IFC 2x3 und IFC4. <br/>
-
-Die IFC4-Version kombiniert eine Reihe von Funktionserweiterungen mit einer umfassenden Überarbeitung und Verbesserung der bestehenden IFC-Spezifikation. Das übergeordnete Ziel ist es, die Konsistenz im gesamten IFC-Schema zu verbessern, den für die Bestückung eines IFC-Datensatzes erforderlichen Modellfussabdruck zu reduzieren und die aus der aktuellen Implementierung und Nutzung gewonnenen Erkenntnisse anzuwenden. IFC4 wurde als die nächste Grundlage für die IFC-gestützte Interoperabilität von Gebäudedatenmodellen als Standard für Open BIM entwickelt.[^6]
-
-![localized image](../img/version.gif){: style="width:900px"}
-
-
-[^6]: [ifc2x3 vs ifc4](https://standards.buildingsmart.org/IFC/DEV/IFC4_2/FINAL/HTML/annex/annex-f/ifc2x3-to-ifc4/index.htm)

@@ -11,7 +11,7 @@ Für den Export von Hüllkörpern ist unter den Exporteinstellungen -> Elemente 
 ## Holzrahmenbaudecke
 Die Bauteile sind nach Bauunter-, oder nach Baugruppe zusammengefasst.  <br>
 !!! info " <br>In den Exporteinstellungen -> Elemente -> Zusammenfassen nach: Bauunter-, Baugruppe ist die Checkbox :white_check_mark: zu aktivieren. Bei aktiver Checkbox werden die Elemente zum Bauteil (z.B. IfcSlab) zusammengefasst. Die Checkbox -> Hüllelemente exportieren soll deaktiviert :x: werden."
-[Export - zusammengesetzte Bauteile](ifc.md#Elemente)
+
 ![localized image](../img/slab.png)
 
 !!! Tipp
