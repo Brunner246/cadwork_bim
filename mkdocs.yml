@@ -1,18 +1,10 @@
 site_name: BIM Kompendium
 site_url: https://cadwork.bim_kompendium.swiss/
-nav:
-    - BuildingInformationModeling: index.md
-    - IFC & cadwork: ifc.md
-    - BCF & cadwork: bcf.md
-    - Examples: examples.md
-    - Workflowsheets:
-      - Archicad: archicad.md
-      - Revit 2022: revit.md
-    - About: about.md
+
 theme:
     name: material
     nav_style: dark
-    logo: logo_small.png
+    logo: cw_logo.svg
     version: v28
     palette:
     - scheme: default
@@ -34,6 +26,8 @@ theme:
 markdown_extensions:
   - attr_list  
   - admonition
+  - toc:
+      permalink: false
   - meta
   - pymdownx.keys
   - footnotes:
@@ -43,29 +37,60 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
+
 extra_css:
   - stylesheets\extra.css
-plugins:
-  - search:
-      separator: '[\s\-\.\_]+'  
-  - mermaid2:
-        arguments:
-          theme: 'light'   
-  #git-revision-date-localized:
-      #type: datetime
-  #- mkdocs-versioning:
-      #version: 0.9.0                 
+
+
 extra:
   generator: false
-  copyright: Copyright &copy; 2021 cadwork
+  copyright: Copyright & copy; 2021 cadwork
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Brunner246
       name: BIM_Kompendium
-extra_javascript:
-    - https://unpkg.com/mermaid/dist/mermaid.min.js
+  alternate:
+    #- name: Default (de)
+      #link: ./
+      #lang: de
+    - name: Deutsch
+      link: ./de/
+      lang: de
+    - name: Français
+      link: ./fr/
+      lang: fr
+    - name: English
+      link: ./en/
+      lang: en
+
+plugins:
+  - search:
+      separator: '[\s\-\.\_]+'  
+  - mkdocs-versioning:
+      version: version 28.0
+    
+  - i18n:
+      # default_language: !ENV [DEFAULT_LANGUAGE, "de"]
+      # default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      default_language: de
+      languages:
+        de: Deutsch
+        fr: Français   
+        en: English 
+      nav_translations:
+        fr:
+          1.Import: 1.Importé
+          2.Modellierung: 2.Modélisation
+          3.Export: 3.Exporté
+          4.BCF: 4.BCF
+          5.Beispiele: 5.Exemples
+          6.Workflowsheets: 6.Workflowsheets
+          7.Über: 7.À propos de nous
+        en:
+          1.Import: 1.Import
+          2.Modellierung: 2.Modelling
+          3.Export: 3.Export
+          4.BCF: 4.BCF
+          5.Beispiele: 5.Examples
+          6.Workflowsheets: 6.Workflowsheets
+          7.Über: 7.About
