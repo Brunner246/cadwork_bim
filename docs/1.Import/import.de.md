@@ -110,7 +110,7 @@ Wenn die Bi-direktionale Aktivierung eingeschalten ist, springt der Zeiger in de
 2.	**Achssystem regenerieren**
     * Das Achssystem der Elemente wird algorithmisch neu berechnet und ausgerichtet.
 3.	**Korrigieren Facetten**
-    * Facetten werden, wenn möglich, korrigiert
+    * Facetten, die auf einer Ebene liegen, werden, wenn möglich korrigiert.
 4.	**IfcElementAssembly** (zusammengesetztes Element)
     * Die IfcElementAssembly repräsentiert Elementbaugruppen, die aus mehreren Elementen zusammengesetzt sind.
     * z. B. Fachwerkbinder, Stahlträger und verschiedene Arten von Rahmen, können durch die Entität IfcElementAssembly dargestellt werden. 
@@ -143,9 +143,5 @@ Der IFC Attribut Mapper ermöglicht das Mappen von Eigenschaften (Properties) au
 ![localized gif](../img/mapping.gif){: style="width:900px"}
 
 #### Ansicht nach IFC-Typ
-
-[Ansicht nach Typ](../index.de.md#das-modell)
-
-
 
 [Ansicht nach Typ](../1.Import/import.de.md#struktur-ansichten)

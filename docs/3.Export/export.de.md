@@ -73,24 +73,25 @@ Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das 
     * Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie eine detailliertere Erläuterung im Kapitel [Geometrie](../index.de.md#geometrie).
 
 
-
 ## Elemente
 
-Sind in einer 3D-Datei Architekturelemente mit Bauteilen angelegt sowie jeweils in Baugruppen oder Bauuntergruppen eingeteilt, so werden die zugehörigen Elemente mit dieser Option zusammengefasst, als z.B. IfcWall, in die IFC-Datei
-exportiert.
-![localized image](../img/elemente.png){: style="width:900px"}
+![localized image](../img/config5.png){: style="width:900px"}
 
-Werden Architekturelemente nach Baugruppen oder Bauuntergruppen zusammengefasst, werden die Hüllen (Holzrahmenbau- und Blockbauhüllen) nicht mit ausgegeben. Dies kommt daher, dass die einzelnen Bauteile zusammengefasst die Wand, Decke oder das Dach darstellen.
-![localized image](../img/wall.png "https://standards.buildingsmart.org/IFC/DEV/IFC4_3/RC1/HTML/schema/ifcsharedbldgelements/lexical/ifcwallelementedcase.htm"){: style="width:400px"}
+1. **Elemente zusammenfassen (empfohlen)**
+    * Sind in einer 3D-Datei Architekturelemente mit Bauteilen angelegt (z.B. [Holzrahmenwand](../5.Beispiele/examples.de.md#holzrahmenbauwand)) sowie jeweils in Baugruppen oder Bauuntergruppen eingeteilt, so werden die zugehörigen Elemente mit dieser Option zusammengefasst, als z.B. IfcWall, in die IFC-Datei exportiert.
 
-**Hüllelemente exportieren**
+    * Werden Architekturelemente nach Baugruppen oder Bauuntergruppen zusammengefasst, werden die Hüllen (Holzrahmenbau- und Blockbauhüllen) nicht mit ausgegeben. Dies kommt daher, dass die einzelnen Bauteile zusammengefasst die Wand, Decke oder das Dach darstellen.
+    ![localized image](../img/wall.png "https://standards.buildingsmart.org/IFC/DEV/IFC4_3/RC1/HTML/schema/ifcsharedbldgelements/lexical/ifcwallelementedcase.htm"){: style="width:400px"}
 
-Ist der Export der Hüllen für weitere Schritte doch notwendig, können Sie durch Aktivieren dieser Option mit ausgegeben werden (nicht empfohlen). Massivwände, Massivdächer und Massivdecken werden immer exportiert, da diese als "reale" Bauteile vorliegen. Für Elemente dieses Typs ist das Aktivieren dieser Option nicht notwendig.
+2. **IfcElementAssembly**
 
-**IfcElementAssembly**
+    * Die Entität IfcElementAssembly repräsentiert komplexe Elementbaugruppen, die aus mehreren Elementen zusammengesetzt sind. Dies können z.B. zusammengesetzte Stahlteile, Fachwerkbinder oder Treppen sein. Wenn die eingerückte Checkbox aktiviert wird, werden Elemente nicht als IfcWall, IfcSlab, oder IfcRoof zusammengefasst, sondern als IfcElementAssembly. 
+    In cadwork verwenden wir für die Zusammenfassung von Elementen in einem IfcElementAssembly bereits seit langem Containerelemente. **Elemente, welche in Containerelementen zusammengefasst sind, werden in cadwork standardmässig als IfcElementAssembly exportiert.** Diese Funktion kann nicht beeinflusst werden. 
 
-Die Entität IfcElementAssembly repräsentiert komplexe Elementbaugruppen, die aus mehreren Elementen zusammengesetzt sind. Dies können z.B. zusammengesetzte Stahlteile, Fachwerkbinder oder Treppen sein.
-In cadwork verwenden wir für eine ähnliche Gruppierung bereits seit langem Containerelemente. **Elemente, welche in Containerelementen zusammengefasst sind, werden in cadwork standardmässig als IfcElementAssembly exportiert.** Diese Funktion kann nicht beeinflusst werden. 
+
+3. **Hüllelemente exportieren**
+
+    * Ist der Export der Hüllen für weitere Schritte doch notwendig, können Sie durch Aktivieren dieser Option mit ausgegeben werden (nicht empfohlen). Massivwände, Massivdächer und Massivdecken werden immer exportiert, da diese als "reale" Bauteile vorliegen. Für Elemente dieses Typs ist das Aktivieren dieser Option nicht notwendig.
 
 
 ## Unterstützte IFC-Schemas

@@ -40,7 +40,8 @@ markdown_extensions:
 
 extra_css:
   - stylesheets\extra.css
-     
+
+
 extra:
   generator: false
   copyright: Copyright & copy; 2021 cadwork
@@ -58,6 +59,9 @@ extra:
     - name: Français
       link: ./fr/
       lang: fr
+    - name: English
+      link: ./en/
+      lang: en
 
 plugins:
   - search:
@@ -71,11 +75,22 @@ plugins:
       default_language: de
       languages:
         de: Deutsch
-        fr: Français    
+        fr: Français   
+        en: English 
       nav_translations:
         fr:
-          3.BCF: 3.BCFé
-          4.Beispiele: 4.examplé  
-          2.Export: 2.Exporté
           1.Import: 1.Importé
-          5.Workflowsheets: 5.Workflowsheets
+          2.Modellierung: 2.Modélisation
+          3.Export: 3.Exporté
+          4.BCF: 4.BCF
+          5.Beispiele: 5.Exemples
+          6.Workflowsheets: 6.Workflowsheets
+          7.Über: 7.À propos de nous
+        en:
+          1.Import: 1.Import
+          2.Modellierung: 2.Modelling
+          3.Export: 3.Export
+          4.BCF: 4.BCF
+          5.Beispiele: 5.Examples
+          6.Workflowsheets: 6.Workflowsheets
+          7.Über: 7.About

@@ -1,9 +1,8 @@
 # Modellierungsregeln
 
-## foo
-asdfasdfas
-asdfasdfa
-asdfasdf
+## BIM INFORMATIONS-LIEFERUNGS-HANDBUCH (ILH) GRUNDLAGEN
+
+Das sogenannte BIM Informations-Lieferungs-Handbuch (BIM Information Delivery Manual) definiert Absprachen, die als Basis zur Durchführung von Projekten unter Anwendung von openBIM dienen.
 
 
 <iframe width="1000" height="1500"
