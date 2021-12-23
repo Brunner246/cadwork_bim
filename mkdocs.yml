@@ -78,6 +78,7 @@ extra:
             using our <a href="..." target=_blank>feedback form</a>.
 
 plugins:
+  - with-pdf
   - search:
       separator: '[\s\-\.\_]+'  
   # - mkdocs-versioning:
