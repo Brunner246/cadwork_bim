@@ -70,7 +70,7 @@ Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das 
     * Die Detaillierung des Modellinhalts wird über die enthaltenen Checkboxen gesteuert. 
     * !!! info "**Achten Sie darauf, dass nur der geforderte Modellinhalt sowie Detaillierungsgrad exportiert wird.**"
 2. **Implizite Geometriemethode**
-    * Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie eine detailliertere Erläuterung im Kapitel [Geometrie](../index.de.md#geometrie).
+    * Zur Option "Exportiere Geometrie mit der impliziten Methode (BETA)" finden Sie eine detailliertere Erläuterung im Kapitel [Geometrie](../index.md#geometrie).
 
 
 ## Elemente

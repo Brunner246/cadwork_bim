@@ -7,7 +7,7 @@ Cadwork ist für den Datenaustausch im Schema IFC2x3 zertifiziert.
 
 ![localized image](../img/certificate.jpg) 
 
-Im Umgang mit IFC-Daten sind das Dateischema, die Version des Schemas, die [Model-View-Definition](../index.de.md#modelviewdefintion-mvd) sowie das Wissen um den Aufbau der Datei entscheidend. In den nächsten Abschnitten wird der Umgang mit dem IFC-Schema in cadwork erläutert. 
+Im Umgang mit IFC-Daten sind das Dateischema, die Version des Schemas, die [Model-View-Definition](../index.md#modelviewdefintion-mvd) sowie das Wissen um den Aufbau der Datei entscheidend. In den nächsten Abschnitten wird der Umgang mit dem IFC-Schema in cadwork erläutert. 
 
 ## Video IFC Import
 
@@ -75,8 +75,8 @@ Mit einem Rechtsklick im BMT öffnet sich das Kontext-Menü über welches die Im
 * Die "aufegklappte" Treeview wird über diese Schaltfläche minimiert. <br>
     ![localized image](../img/tree.png){: style="width:400px"}
 
-### 3. Bauteil erzuegen & BCF
-* Importierte Bauteile lassen sich zu cadwork Elementen konvertieren. Somit können diese für die Planung weitergenutzt werden (z.B. als Referenzbauteile). Durch Klicken auf **als Bauteil erzuegen**, werden die selektierten Elemente zu cadwork Bauteilen konvertiert.  <br>
+### 3. Bauteil erzeugen & BCF
+* Importierte Bauteile lassen sich zu cadwork Elementen konvertieren. Somit können diese für die Planung weitergenutzt werden (z.B. als Referenzbauteile). Durch Klicken auf **als Bauteil erzeugen**, werden die selektierten Elemente zu cadwork Bauteilen konvertiert.  <br>
 
     !!! info " **Tipp!** <br>Prüfen Sie den Inhalt der erhaltenen Daten immer zuerst in einem Viewer (**QualityGate**) anschliessend sind die importierten Daten in cadwork sorgfältig auf ihre Richtigkeit (Genauigkeit, Informationen) zu kontrollieren"
 
