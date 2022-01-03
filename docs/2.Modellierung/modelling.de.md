@@ -65,35 +65,5 @@ Projektdaten -> Projektort -> **Ortsbeschreibung Baustelle** (IfcSite)
 
 ![localized image](../img/site.png)
 
-## Geschossmanager
 
-Viele CAD-Software benötigen zusätzlich zur Geschossstruktur definierte Höhenangaben. In den Geschosseinstellungen können daher die Höhen definiert werden. 
-Die Höhe ist, IFC-konform, immer als Oberkante Rohfussboden zu sehen (als Attribut IfcBuildingstorey: Elevation).
-
-![localized image](../img/storey_cw.png){: style="width:300px"}
-
-Ein Geschoss umfasst jeweils die Decke und die sich "darauf befindenden" Bauteile (Wände, Stützen, etc.). 
-
-![localized image](../img/storey_bs.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcbuildingstorey.htm"){: style="width:600px"}
-
-**Geschoss erstellen**
-
-1. Geschossmanager / BMT öffnen
-2. Rechtsklick in Geschossmanager / BMT
-3. :heavy_plus_sign: Neues Gebäude / Neues Geschoss 
-    - [ ] geforderte Eingabefelder befüllen  
-    - [x] Gebäude - Geschoss erstellt
-
-![localized image](../img/storey.gif){: style="width:900px"}
-
-**Elemente zu Gebäude / Geschoss zuweisen** <br>
-
-Option A:
-
-* Doppelklick auf das Geschoss im BMT -> aktiviert das Gebäude & Geschoss
-    * neu modellierte Elemente werden direkt diesem Gebäude & Geschoss zugewiesen
-
-Option B:
-
-* Bauteile aktivieren -> Modifizieren -> BIM -> Gebäude (Auswahl Gebäude) -> Geschoss (Auswahl Geschoss)
 
