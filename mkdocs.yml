@@ -68,14 +68,21 @@ extra:
         - icon: material/emoticon-happy-outline
           name: This page was helpful
           datas: 1
-          note: >-
+          note:
             Thanks for your feedback!
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           datas: 0
-          note: >- 
+          note:
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target=_blank>feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: 
+      Wir verwenden Cookies, um die Effektivität unserer Dokumentation zu messen und um festzustellen, ob Sie
+      finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns, unsere
+      unsere Dokumentation zu verbessern.
+    
 
 plugins:
   - pdf-export:
