@@ -1,5 +1,5 @@
 site_name: BIM Kompendium
-site_url: https://cadwork.bim_kompendium.swiss/
+site_url: https://cadwork-bim.readthedocs.io/de/latest/
 
 theme:
     name: material
