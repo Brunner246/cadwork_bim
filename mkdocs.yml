@@ -74,8 +74,7 @@ extra:
           name: This page could be improved
           datas: 0
           note:
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target=_blank>feedback form</a>.
+            Thanks for your feedback!
   consent:
     title: Cookie consent
     description: 
