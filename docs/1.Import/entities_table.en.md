@@ -45,7 +45,7 @@ IfcRampFlight | | :x:
 IfcRoof | :x:
 IfcShadingDevice | | :x:
 IfcSlab | :x: |  | as one volume (no geometric layers)
-IfcStair |  | :x:
+IfcStair | :x: | :x: | situational
 IfcStairFlight | | :x:
 IfcWall | :x: |  | as one volume (no geometric layers)
 IfcWindow | | :x: | in most cases it is the opening and not the window that is relevant. 
