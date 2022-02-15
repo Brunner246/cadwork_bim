@@ -8,6 +8,7 @@ BCF is the abbreviation for BIM Collaboration Format, which is an open format fo
 
 In general, the BIM Collaboration Format (BCF) enables different BIM applications to communicate with each other in a model-based manner.
 Inbetween different applications the current version BCF 2.1 enables the transmission of
+
 * model-related annotations (so-called issues),
 * the affected elements in the model (via object GUIDs) as well as
 * reproducible screen sections.
