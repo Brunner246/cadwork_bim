@@ -3,7 +3,7 @@
 ## Was? Wieso? Wer? Wie? Wann?
 
 Welche Daten benötigen Sie von wem für ihre Planung? <br>
-Definieren Sie was Sie von jeder, am Projekt beteiligten, Partei benötigen. 
+Definieren Sie, was Sie von jeder, am Projekt beteiligten, Partei benötigen. 
 
 ![localized image](../img/what.jpg)
 
@@ -24,7 +24,7 @@ Zu Beginn des Projekts muss ein Nullpunkt, die Geschossstruktur sowie das Planun
 ![localized image](../img/fachmodelle.jpg)
 
 
-## Holzbau-relevante IFC-Typen
+## Holzbau-relevante IFC-Typen (Beispiel)
 
 Entität           | empfohlen                           | nicht empfohlen | Kommentar
 -----------------|:-----------------------------------:|:-------------:|
