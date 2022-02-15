@@ -7,7 +7,12 @@ Definieren Sie, was Sie von jeder, am Projekt beteiligten, Partei benötigen.
 
 ![localized image](../img/what.jpg)
 
-Wie müssen diese Daten beschrieben sein? Welcher Qualität soll die Geometrie entsprechen?<br> Welche Informationen benötigen Sie vom Gegenüber?
+Wie müssen diese Daten beschrieben sein? <br> Welcher Qualität soll die Geometrie entsprechen?<br> Welche Informationen benötigen Sie vom Gegenüber?<br> Welche Model View Defintion kommt für den Anwendungsfall zum Einsatz? <br> Für den Datenaustausch empfehlen wir für IFC 2x3 die MVD CoordinationView. <br> Für IFC 4 ist die MVD DesignTransferView empfohlen. 
+
+Eine MVD (Model View Definition) definiert eine darauf abgestimmte Eingrenzung (Subset) der IFC-Spezifikation (IFC-Schema). Diese Eingrenzung fokussiert auf die Anforderungen (Exchange Requirements) des Erstellers und Empfängers der Informationen. Die Erhebung der Anforderungen erfolgt dabei auf Grundlage einer IDM (Information Delivery Manual)[^1]
+[^1]: [BIMcert Handbuch](https://bif.bauwesen.tuwien.ac.at/fortbildung/kurse/aktuelle-kurse/bimcert/)
+
+Ein IDM definiert den Umfang und die Art einer Informationsanforderung, die von den Projektbeteiligten zu einem konkreten Zeitpunkt (Prozess) benötigt oder geliefert werden müssen (Austauschanforderungen).
 
 
 ![localized image](../img/how.jpg)
@@ -24,7 +29,7 @@ Zu Beginn des Projekts muss ein Nullpunkt, die Geschossstruktur sowie das Planun
 ![localized image](../img/fachmodelle.jpg)
 
 
-## Holzbau-relevante IFC-Typen (Beispiel)
+## Holzbau-relevante IFC-Typen (Beispieltabelle - der Umfang der Daten ist projektabhängig)
 
 Entität           | empfohlen                           | nicht empfohlen | Kommentar
 -----------------|:-----------------------------------:|:-------------:|
@@ -40,7 +45,7 @@ IfcMember | :x:
 IfcPile | | :x:
 IfcPlate | :x:
 IfcRailing | | :x:
-IfcRamp | :x:
+IfcRamp | | :x:
 IfcRampFlight | | :x:
 IfcRoof | :x:
 IfcShadingDevice | | :x:

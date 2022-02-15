@@ -7,7 +7,16 @@ Determine what you need from each party involved in the project.
 
 ![localized image](../img/what.jpg)
 
-How must this data be described? What quality should the geometry correspond to?<br> What information do you need from the partner?
+How must this data be described? <br>
+What quality should the geometry correspond to? <br>
+What information do you need from the counterpart? <br>
+Which model view definition is used for the application? <br>
+For data exchange, we recommend the MVD CoordinationView for IFC 2x3. <br>
+For IFC 4, the MVD DesignTransferView is recommended. <br>
+
+An MVD (Model View Definition) defines a subset of the IFC specification (IFC schema). This subset focuses on the requirements (exchange requirements) of the creator and recipient of the information. The requirements are elicited on the basis of an IDM (Information Delivery Manual)1.
+
+An IDM defines the scope and type of an information requirement that must be needed or delivered by the project participants at a specific point in time (process) (exchange requirements).
 
 
 ![localized image](../img/how.jpg)
@@ -24,7 +33,7 @@ At the beginning of the project, a zero point, the storey structure as well as t
 ![localized image](../img/fachmodelle.jpg)
 
 
-## IFC types relevant to timber construction (example)
+## IFC types relevant to timber construction (Example table - the scope of the data depends on the project)
 
 Entities           | recommended                           | not recommended | comment
 -----------------|:-----------------------------------:|:-------------:|
@@ -40,7 +49,7 @@ IfcMember | :x:
 IfcPile | | :x:
 IfcPlate | :x:
 IfcRailing | | :x:
-IfcRamp | :x:
+IfcRamp | | :x:
 IfcRampFlight | | :x:
 IfcRoof | :x:
 IfcShadingDevice | | :x:
