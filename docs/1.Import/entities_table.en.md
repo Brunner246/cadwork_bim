@@ -24,7 +24,7 @@ At the beginning of the project, a zero point, the storey structure as well as t
 ![localized image](../img/fachmodelle.jpg)
 
 
-## IFC types relevant to timber construction
+## IFC types relevant to timber construction (example)
 
 Entities           | recommended                           | not recommended | comment
 -----------------|:-----------------------------------:|:-------------:|
