@@ -7,7 +7,7 @@
 The IFC export configuration dialog can be opened via Export --> Files... --> Open IFC file. 
 
 ## Project data
-![localized image](../img/config1.png)
+![localized image](../img/de/config1.png)
 
 [Definition Projektname & Projektort](../2.Modellierung/modelling.en.md#ifcproject-ifcsite)
 
@@ -19,7 +19,7 @@ The IFC export configuration dialog can be opened via Export --> Files... --> Op
 	
 ## Attributes
 
-![localized image](../img/config2.png)
+![localized image](../img/de/config2.png)
 
 1. **IFC-Layer**
 		* Mit dem IFC-Layer bietet sich bei diversen Software eine weitere Möglichkeit zur Strukturierung der Daten. Empfohlen wird die Zuweisung des Attributs **Name**.
@@ -36,7 +36,7 @@ The IFC export configuration dialog can be opened via Export --> Files... --> Op
 For the **"Advanced User "** there is the possibility to create own Psets. These can be either standard Psets like e.g. the Pset_BeamCommon, or user-defined ones like e.g. "Properties_Lumber_XY". 
 For this purpose, the IfcProperty are created in the user attributes. For example, this can be the property LoadBearing on User10. The properties required for the pset are then combined into a set in the export dialog under the "Pset Definitions" tab. 
 
-![localized image](../img/config3.png)
+![localized image](../img/de/config3.png)
 
 1. **Creating user defined property sets**
     * Choose "Add user attribute" to start defining property sets.
@@ -67,7 +67,7 @@ For this purpose, the IfcProperty are created in the user attributes. For exampl
 
 ## Level of detail
 
-![localized image](../img/config4.png)
+![localized image](../img/de/config4.png)
 
 1. **Level of detail** 
     * The model content detail level can be customized according to requirements. 
@@ -78,7 +78,7 @@ For this purpose, the IfcProperty are created in the user attributes. For exampl
 
 ## Element group
 
-![localized image](../img/config5.png){: style="width:900px"}
+![localized image](../img/de/config5.png){: style="width:900px"}
 
 1. **Combine elements (recommended)**
     * If architectural elements with components are created in a 3D file (e.g. [Framed Wall](../5.Beispiele/examples.en.md)) as well as each divided into assemblies or building subgroups, the associated elements are exported to the IFC file summarized with this option, as e.g. IfcWall.

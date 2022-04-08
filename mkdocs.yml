@@ -98,6 +98,7 @@ plugins:
       verbose: true
       media_type: print
       enabled_if_env: ENABLE_PDF_EXPORT #  (set environment variable ENABLE_PDF_EXPORT to 1 to enable)
+
   - search:
       separator: '[\s\-\.\_]+'  
   # - mkdocs-versioning:
@@ -112,9 +113,9 @@ plugins:
         en: English 
       nav_translations:
         fr:
-          1.Import: 1.Importé
+          1.Import: 1.Import
           2.Modellierung: 2.Modélisation
-          3.Export: 3.Exporté
+          3.Export: 3.Export
           4.BCF: 4.BCF
           5.Beispiele: 5.Exemples
           6.Workflowsheets: 6.Workflowsheets

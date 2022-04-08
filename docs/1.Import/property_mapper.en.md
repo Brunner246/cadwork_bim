@@ -1,6 +1,6 @@
-# Property mapper
+# Property Mapper
 
-![localized image](../img/attribute_mapper.png)
+![localized image](../img/de/prop_mapper.png)
 
 1. **IFC-file selected**
     * Dropdown of loaded IFC-files in cadwork 3D. The one to make settings for can be chosen, if there are several imported in 3D.

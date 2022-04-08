@@ -14,7 +14,8 @@ Which model view definition is used for the application? <br>
 For data exchange, we recommend the MVD CoordinationView for IFC 2x3. <br>
 For IFC 4, the MVD DesignTransferView is recommended. <br>
 
-An MVD (Model View Definition) defines a subset of the IFC specification (IFC schema). This subset focuses on the requirements (exchange requirements) of the creator and recipient of the information. The requirements are elicited on the basis of an IDM (Information Delivery Manual)1.
+An MVD (Model View Definition) defines a subset of the IFC specification (IFC schema). This subset focuses on the requirements (exchange requirements) of the creator and recipient of the information. The requirements are elicited on the basis of an IDM (Information Delivery Manual)[^1].
+[^1]: [BIMcert Handbuch](https://bif.bauwesen.tuwien.ac.at/fortbildung/kurse/aktuelle-kurse/bimcert/)
 
 An IDM defines the scope and type of an information requirement that must be needed or delivered by the project participants at a specific point in time (process) (exchange requirements).
 
@@ -38,7 +39,7 @@ At the beginning of the project, a zero point, the storey structure as well as t
 Entities           | recommended                           | not recommended | comment
 -----------------|:-----------------------------------:|:-------------:|
 IfcBeam | :x:
-IfcBuildingElementProxy | :x: | :x: | situational <br> For the exchange of recesses, BuildingElementProxy's with the PredefinedType **ProvisionForVoid** is required.
+IfcBuildingElementProxy | :x: | :x: | situational <br> For the exchange of recesses, BuildingElementProxy's with the ObjectType **ProvisionForVoid** is required.
 IfcChimney | | :x:
 IfcColumn | :x:
 IfcCovering | | :x: | Only if necessary for construction

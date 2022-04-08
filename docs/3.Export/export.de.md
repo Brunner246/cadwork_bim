@@ -7,7 +7,7 @@
 Der IFC-Export Konfigurationsdialog lässt sich via Exportieren --> Dateien... --> IFC-Datei öffnen. 
 
 ## Projektdaten
-![localized image](../img/config1.png)
+![localized image](../img/de/config1.png)
 
 [Definition Projektname & Projektort](../2.Modellierung/modelling.de.md#ifcproject-ifcsite)
 
@@ -19,7 +19,7 @@ Der IFC-Export Konfigurationsdialog lässt sich via Exportieren --> Dateien... -
 
 ## Attribute
 
-![localized image](../img/config2.png)
+![localized image](../img/de/config2.png)
 
 1. **IFC-Layer**
     * Mit dem IFC-Layer bietet sich bei diversen Software eine weitere Möglichkeit zur Strukturierung der Daten. Empfohlen wird die Zuweisung des Attributs **Name**. 
@@ -36,7 +36,7 @@ Der IFC-Export Konfigurationsdialog lässt sich via Exportieren --> Dateien... -
 Für den **"Advanced User"** gibt es die Möglichkeit eigene Psets anzulegen. Dies können entweder Standard-Psets wie z.B. das Pset_BeamCommon, oder benutzerdefinierte wie z.B. "Eigenschaften_Holzbau_XY" sein. 
 Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das Property LoadBearing auf User10 sein. Die für das Pset benötigten Eigenschaften werden dann im Exportdialog unter dem Register "Pset-Defintionen" zu einem Set zusammengefasst. 
 
-![localized image](../img/config3.png)
+![localized image](../img/de/config3.png)
 
 1. **OptionMenu UserAttribute**
     * Klicken Sie auf "Benutzerattribut hinzufügen" --> anschliessend kann mit dem definieren des Eigenschaftenset gestartet werden. 
@@ -68,7 +68,7 @@ Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das 
 
 ## Detaillierung
 
-![localized image](../img/config4.png)
+![localized image](../img/de/config4.png)
 
 1. **Detaillierungsgrad** 
     * Die Detaillierung des Modellinhalts wird über die enthaltenen Checkboxen gesteuert. 
@@ -79,7 +79,7 @@ Dazu werden in den User-Attributen die IfcProperty angelegt. Dies kann z.B. das 
 
 ## Elemente
 
-![localized image](../img/config5.png){: style="width:900px"}
+![localized image](../img/de/config5.png){: style="width:900px"}
 
 1. **Elemente zusammenfassen (empfohlen)**
     * Sind in einer 3D-Datei Architekturelemente mit Bauteilen angelegt (z.B. [Holzrahmenwand](../5.Beispiele/examples.de.md#holzrahmenbauwand)) sowie jeweils in Baugruppen oder Bauuntergruppen eingeteilt, so werden die zugehörigen Elemente mit dieser Option zusammengefasst, als z.B. IfcWall, in die IFC-Datei exportiert.

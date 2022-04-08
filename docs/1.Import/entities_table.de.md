@@ -34,7 +34,7 @@ Zu Beginn des Projekts muss ein Nullpunkt, die Geschossstruktur sowie das Planun
 Entität           | empfohlen                           | nicht empfohlen | Kommentar
 -----------------|:-----------------------------------:|:-------------:|
 IfcBeam | :x:
-IfcBuildingElementProxy | :x: | :x: | situativ <br> Für den Austausch von Aussparungen sind BuildingElementProxy's mit dem PredefinedType **ProvisionForVoid** empfohlen.
+IfcBuildingElementProxy | :x: | :x: | situativ <br> Für den Austausch von Aussparungen sind BuildingElementProxy's mit dem ObjectType **ProvisionForVoid** empfohlen.
 IfcChimney | | :x:
 IfcColumn | :x:
 IfcCovering | | :x: | nur wenn für Konstruktion nötig

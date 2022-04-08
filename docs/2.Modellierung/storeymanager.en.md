@@ -4,7 +4,7 @@ The storey manager is used to structure the project. Buildings and associated fl
 With the BIM management tool, buildings and floor associations can be controlled within cadwork. Instead of the previous floor structure via the assembly, the floor manager (BMT) is used from version 27. 
 The tool enables a clear, structured order of the floors and the associated components. 
 
-![localized image](../img/struct.png){: style="width:900px"}
+![localized image](../img/struct.png)
 
 ## Storey/BIM manager <br>
 The storey manager or the BIM Management Tool (BMT) can either be docked to the left or the right menu or it can be opened as an extra window.
@@ -40,12 +40,12 @@ Various settings can be made via the context menu. The options in the context me
 3. Help... <br>
     * Detailed information on the traffic lights system for visualisation. 
 
-    ![localized image](../img/help.png){: style="width:300px"}
+    ![localized image](../img/de/help.png){: style="width:300px"}
 
 
 ### Right-click on an existing building / on an existing floor
 
-![localized image](../img/storey_context.png){: style="width:900px"}
+![localized image](../img/de/storey_context.png){: style="width:900px"}
 
 1. Configuration buiding/storey <br>
 ![localized image](../img/storey.gif){: style="width:900px"}

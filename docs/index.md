@@ -1,5 +1,5 @@
 # Cadwork BIM
-![localized image](img/cadwork_bim.png){: style="width:700px"}
+![localized image](img/cadwork_bim.svg)
 
 Die Digitalisierung in der Baubranche nimmt immer mehr Fahrt auf. Die Methode Building Information Modeling (BIM) dient dabei als Einstieg. Der transparente Prozess mit einer hohen Qualität an objektbeschreibenden Informationen und Quality Gates bildet die Grundlage für digitale Innovationen. Neben technischen Aspekten fordert die Methode einen **Kulturwechsel in der Baubranche**. Projektbeteiligte führen transparente Informationsflüsse und liefern gezielt Daten zum definierten Zeitpunkt in der geforderten Qualität. BIM führt zu Transparenz in Kommunikation und Zusammenarbeit. Es ist absehbar, dass sich in wenigen Jahren, wie bei der Einführung von CAD im letzten Jahrtausend, der gesamte Abwicklungsprozess über den Lebenszyklus dahingehend anpassen wird, dass die BIM-Methode eine zentrale Rolle einnehmen wird.
 

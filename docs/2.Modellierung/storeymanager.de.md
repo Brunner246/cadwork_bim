@@ -5,7 +5,7 @@ Mit dem BIM-Management-Tool lassen sich Gebäude und Geschosszugehörigkeiten in
 Das Tool ermöglicht eine übersichtliche, strukturierte Ordnung der Geschosse und der zugehörigen Bauteile. 
 
 
-![localized image](../img/struct.png){: style="width:900px"}
+![localized image](../img/struct.png)
 
 ## Geschossmanager – BIM Management Tool <br>
 Der Geschossmanager bzw. das BIM Management Tool (kurz: BMT) kann entweder an das linke oder 
@@ -21,11 +21,9 @@ Ein Geschoss, auch Etage, Stockwerk und Stock, ist die Gesamtheit aller Räume i
 Viele CAD-Software benötigen zusätzlich zur Geschossstruktur definierte Höhenangaben. In den Geschosseinstellungen können daher die Höhen definiert werden. 
 Die Höhe ist, IFC-konform, immer als Oberkante Rohfussboden zu sehen (als Attribut IfcBuildingstorey: Elevation).
 
-![localized image](../img/storey_cw.png){: style="width:300px"}
-
 Ein Geschoss umfasst jeweils die Decke und die sich "darauf befindenden" Bauteile (Wände, Stützen, etc.). 
 
-![localized image](../img/storey_bs.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcbuildingstorey.htm"){: style="width:600px"}
+![localized image](../img/storey_cw.png "https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/ifcbuildingstorey.htm")
 
 
 ## Das Kontext Menü
@@ -45,12 +43,20 @@ Mit einem Rechtsklick in das BIM-Management-Tool öffnet sich das Kontext-Menü.
 3. Hilfe <br>
     * Unter "Hilfe" wird die Bedeutung der "Ampelsteuerung" bezogen auf die Sichtbarkeit der Elemente erläutert. 
 
-    ![localized image](../img/help.png){: style="width:300px"}
+    ![localized image](../img/de/help.png){: style="width:300px"}
 
+### Rechtsklick auf Site/Gelände
+![localized image](../img/de/storey_context.png){: style="width:900px"}
+
+1. Projektdaten öffnen
+2. Nullpunkteinstellungen öffnen
+3. Geometrie als Gelände definieren
+    * Gelände aktivieren (ein geschlossenes Volumen zulässig)
+    * Rechtsklick auf Site -> Button Nr.2 wählen
 
 ### Rechtsklick auf ein bestehendes Gebäude
+![localized image](../img/de/bld_context.png){: style="width:900px"}
 
-![localized image](../img/storey_context.png){: style="width:900px"}
 
 1. Konfiguration Gebäude/Geschoss <br>
 ![localized image](../img/storey.gif){: style="width:900px"}
