@@ -5,7 +5,7 @@ cadwork offers extensive possibilities in data exchange with the IFC and BCF sch
 
 cadwork is certified for data exchange in scheme IFC 2x3.
 
-![localized image](../img/certificate.jpg) 
+![localized image](../img/certificate.jpg)
 
 When dealing with IFC data, the file schema, the version of the schema, the [model-view-definition](../index.en.md#modelviewdefintion-mvd) as well as the knowledge about the structure of the file are crucial. In the next sections the handling of the IFC schema in cadwork will be explained. 
  
@@ -43,13 +43,21 @@ Afterwards active elements can be converted to cadwork elements.
 
 In order to keep and edit georeferenced models in the required accuracy of cadwork, the internal zero point is shifted when importing georeferenced IFC files. Elements too far away from the zero point would lead to accuracy problems. After confirming the shift, the displacement vector is saved internally and the global coordinates are saved (Settings -> Global nil point).
 
-![localized image](../img/shift.png){: style="width:400px"}
+![localized image](../img/de/shift.png){: style="width:400px"}
 
 When exporting the required model content from cadwork, the displacement vector is taken into account and the model origin is placed at the original position. 
 
-![localized image](../img/nillpoint.png){: style="width:400px"}
+![localized image](../img/de/nillpoint.png){: style="width:400px"}
 
 ![localized image](../img/true_north.png)
+<br>
+<br>
+
+![localized image](../img/georef.jpg "https://biblus.accasoftware.com/de/ifc-coordinate-system-und-georeferenzierung-des-projektss-hrfser-htfw-tkeah5t9weo/")
+<br>
+<br>
+
+[IFC coordinate system BibLus](https://biblus.accasoftware.com/de/ifc-coordinate-system-und-georeferenzierung-des-projektss-hrfser-htfw-tkeah5t9weo/){ .md-button .md-button--primary }
 
 ## Changing hierarchical and structural view
 
@@ -63,7 +71,7 @@ In this context menu you also can open the IFC-import-configuration dialogue.
 
 
 ## The BMT context menu
-![localized image](../img/context.png){: style="width:600px"}
+![localized image](../img/de/context.png){: style="width:600px"}
 
 ### 1. Visibility 
 * Decide which elements are to be displayed.
@@ -71,7 +79,7 @@ In this context menu you also can open the IFC-import-configuration dialogue.
 ### 2. Activate elements, Treeview
 * The activation status of elements is set active or inactive. 
 * The minimized treeview can be maximized and vice versa. <br>
-    ![localized image](../img/tree.png){: style="width:400px"}
+    ![localized image](../img/de/tree.png){: style="width:400px"}
 
 ### 3. Add element in cadwork & BCF
 * The imported exchange elements can be converted to cadwork elements with the option **Add element in cadwork**. Now they can be handled as normal constructive elements in 3D. <br>
@@ -99,7 +107,7 @@ If bi-directional activation is enabled, the element activated in 3d is also hig
 #### IFC import-configuration
 **Configuration dialogue**
 
-![localized image](../img/dlg1.png) 
+![localized image](../img/de/dlg1.png) 
 
 1.	**Cut opening**
     * Definition if the opening is to be cut out from the wall container or if the IfcOpeningElement is to be generated as a panel with type opening.

@@ -26,4 +26,18 @@ Elements are grouped as subgroup or group. <br>
 
 ![localized image](../img/assembly.png)
 
+### Steelparts
+![localized image](../img/steel_cw.png)
 
+## Treppe
+
+* IfcStair
+    * IfcPlate
+    * IfcStairFlight
+    * IfcRailing
+    * ...
+
+Stairs are created with the Stair module tool. The elements belonging to the stair are automatically combined as IfcStair during the IFC export. 
+The components contained in the stair, such as slab, stringer, railing, etc., must be assigned the appropriate IfcType. 
+
+![localized image](../img/stair.png)

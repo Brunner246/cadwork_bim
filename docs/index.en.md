@@ -1,5 +1,5 @@
 # cadwork BIM
-![localized image](img/cadwork_bim.png){: style="width:700px"}
+![localized image](img/cadwork_bim.svg){: style="width:700px"}
 
 Digitization in the construction industry is gaining more and more momentum. The Building Information Modeling (BIM) method serves as an entry point. The transparent process with a high quality of object-describing information and quality gates forms the basis for digital innovations. In addition to technical aspects, the method calls for a **cultural change in the construction industry**. Project participants manage transparent information flows and deliver targeted data at the defined time in the required quality. BIM leads to transparency in communication and collaboration. It is foreseeable that in a few years, as with the introduction of CAD in the last millennium, the entire execution process over the life cycle will adapt so that the BIM method will take on a central role.
 

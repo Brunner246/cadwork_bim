@@ -58,5 +58,5 @@ Den BCF-Manager können Sie alternativ auch nativ unter cadwork Anwendern nutzen
 
 [^5]: [BIMcert](https://technical.buildingsmart.org/standards/bcf/)
 
-![localized image](../img/bcf_manager.png)
+![localized image](../img/de/bcf_manager.png)
 

@@ -66,7 +66,7 @@ In the Info, Quickinfo and in the menu "Modify" the most important information o
 
 In order to edit the IFC elements or use them for cadwork functions, they must first be converted into cadwork elements. This is done either in the Modify menu with the function "Add element in cadwork", or in the context menu within the BIM Management Tool. Once the parts have been converted to cadwork elements, they will be grayed out in the IFC tab and displayed in the cadwork-3D tab in the corresponding IFC structure. 
 
-![localized image](../img/bim_manager.png){: style="width:300px"}
+![localized image](../img/de/bim_manager.png){: style="width:300px"}
 
 
 Components like wall, ceiling, opening or roof are directly recognized with the correct element type (wall, ceiling, opening, roof) after conversion in cadwork. 
@@ -114,7 +114,7 @@ IFC-export
 -	All elements have a unique name.
 -	**Tip** :bulb: : Assign the "Name" attribute to the IFC layer. This allows the architecture optimal "filter" possibilities of the components.
 
-    ![localized image](../img/exp.png){: style="width:600px"}
+    ![localized image](../img/de/exp.png){: style="width:600px"}
  
 <br> 
 
@@ -124,13 +124,13 @@ IFC-export
 -	the buildings´ local position is coordinated
 -	**Tip** :bulb: : Use an existing element as file origin (e.g. a pyramid)
 
-![localized image](../img/nill.png){: style="width:600px"} 
+![localized image](../img/nill.png){: style="width:600px"}
 
 Only the elements defined in the exchange requirements are exported. The level of detail can be controlled via the export settings. 
 
 **Tip** :bulb: : Data exchange - **as much as necessary but as less as possible.**
 
-![localized image](../img/detaillierung.png){: style="width:600px"} 
+![localized image](../img/de/detaillierung.png){: style="width:600px"} 
 
 **Export composite components**
 
@@ -140,7 +140,7 @@ The following settings are recommended for the correct outline of composite comp
 -	Covers contain the correct IFC entity (Wall, Opening, Slab, Roof, ...).
 
  
-![localized image](../img/wand.png){: style="width:600px"} 
+![localized image](../img/de/wand.png){: style="width:600px"} 
 
  
 **Control of IFC-file (quality gate)**

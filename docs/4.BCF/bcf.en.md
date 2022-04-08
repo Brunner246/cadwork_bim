@@ -54,5 +54,5 @@ You may use the BCF-manager also native for internal cadwork collaboration for e
 
 [^5]: [BIMcert](https://technical.buildingsmart.org/standards/bcf/)
 
-![localized image](../img/bcf_manager.png)
+![localized image](../img/de/bcf_manager.png)
 

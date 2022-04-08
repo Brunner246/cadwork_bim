@@ -44,13 +44,21 @@ Um georeferenzierte Modelle in der geforderten Genauigkeit von cadwork halten un
 Zu weit vom Nullpunkt entfernte Elemente würden zu Genauigkeitsproblemen führen. 
 Nach Bestätigung der Verschiebung, wird der Verschiebungsvektor intern gespeichert und die globalen Koordinaten gespeichert (Einstellungen -> Globaler Nullpunkt)
 
-![localized image](../img/shift.png){: style="width:400px"}
+![localized image](../img/de/shift.png){: style="width:400px"}
 
 Beim Export des geforderten Modellinhalts aus cadwork wird der Verschiebungsvektor berücksichtigt und der Modellursprung an derselben Stelle platziert. 
 
-![localized image](../img/nillpoint.png){: style="width:400px"}
+![localized image](../img/de/nillpoint.png){: style="width:400px"}
 
 ![localized image](../img/true_north.png)
+<br>
+<br>
+
+![localized image](../img/georef.jpg "https://biblus.accasoftware.com/de/ifc-coordinate-system-und-georeferenzierung-des-projektss-hrfser-htfw-tkeah5t9weo/")
+<br>
+<br>
+
+[IFC coordinate system BibLus](https://biblus.accasoftware.com/de/ifc-coordinate-system-und-georeferenzierung-des-projektss-hrfser-htfw-tkeah5t9weo/){ .md-button .md-button--primary }
 
 ## Struktur-Ansichten
 
@@ -65,7 +73,7 @@ Mit einem Rechtsklick im BMT öffnet sich das Kontext-Menü über welches die Im
 
 
 ## Das BMT Kontext Menü
-![localized image](../img/context.png){: style="width:600px"}
+![localized image](../img/de/context.png){: style="width:600px"}
 
 ### 1. Sichtbarkeit 
 * Durch das Anwählen der Schaltflächen wird die Sichtbarkeit der Elemente gesteuert
@@ -73,7 +81,7 @@ Mit einem Rechtsklick im BMT öffnet sich das Kontext-Menü über welches die Im
 ### 2. Elemente aktivieren, Treeview
 * Durch das Anwählen der Schaltflächen Elemente aktivieren, oder Elemente deaktivieren, kann der Zustand der Elemente gesteurt werden. 
 * Die "aufegklappte" Treeview wird über diese Schaltfläche minimiert. <br>
-    ![localized image](../img/tree.png){: style="width:400px"}
+    ![localized image](../img/de/tree.png){: style="width:400px"}
 
 ### 3. Bauteil erzeugen & BCF
 * Importierte Bauteile lassen sich zu cadwork Elementen konvertieren. Somit können diese für die Planung weitergenutzt werden (z.B. als Referenzbauteile). Durch Klicken auf **als Bauteil erzeugen**, werden die selektierten Elemente zu cadwork Bauteilen konvertiert.  <br>
@@ -101,7 +109,7 @@ Wenn die Bi-direktionale Aktivierung eingeschalten ist, springt der Zeiger in de
 #### IFC Import-Einstellungen
 **Import Dialog - Konfiguration**
 
-![localized image](../img/dlg1.png) 
+![localized image](../img/de/dlg1.png) 
 
 1.	**Öffnungen einschneiden**
     * Definiert ob Öffnungen nach dem Import hart/weich eingeschnitten werden sollen, oder ob das IfcOpeningElement zu einem Element mit dem Typ Öffnung generiert werden soll.

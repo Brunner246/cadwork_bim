@@ -56,7 +56,7 @@ Preset IFC-type-assignemnts can be set at Userp -> Timber... -> Attributes; Pres
 The name of the IfcProject as well as the IfcSite are to be made in the project data.<br>
 Preferences (top menu) -> Project data -> General -> **Project name** (IfcProject)<br>
 Preferences (top menu) -> Project data -> Project location _> **Site description** (IfcSite)
-![localized image](../img/site.png)
+![localized image](../img/de/site.png)
 
 
 

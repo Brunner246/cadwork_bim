@@ -59,7 +59,7 @@ Die Bezeichnung des IfcProject sowie der IfcSite sind in den Projektdaten vorzun
 Projektdaten -> Allgemein -> **Projektname** (IfcProject)<br>
 Projektdaten -> Projektort -> **Ortsbeschreibung Baustelle** (IfcSite)
 
-![localized image](../img/site.png)
+![localized image](../img/de/site.png)
 
 
 

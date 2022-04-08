@@ -65,7 +65,7 @@ Im Info, Quickinfo und im Menü «Modifizieren» werden die wichtigsten Informat
 
 Damit die IFC-Elemente bearbeitet bzw. für cadwork Funktionen genutzt werden können, müssen sie zuerst in Cadwork Elemente umgewandelt werden. Dies erfolgt entweder im Modifizieren Menü mit der Funktion «Modifizieren  als Bauteil» erzeugen, oder im Kontextmenü innerhalb des BIM Management Tools. Sobald die Bauteile in cadwork Elemente umgewandelt wurden, werden sie im IFC-Reiter ausgegraut und im Cadwork-3D Reiter in der entsprechenden IFC-Struktur dargestellt. 	
 
-![localized image](../img/bim_manager.png){: style="width:300px"}
+![localized image](../img/de/bim_manager.png){: style="width:300px"}
 
 
 Bauteile wie Wand, Decke, Öffnung oder Dach werden nach dem Import in cadwork direkt mit dem richtigen Element-Typ (Wand, Decke, Öffnung, Dach) erkannt. 
@@ -115,7 +115,7 @@ IFC-Export
 -	Alle Elemente besitzen einen eindeutigen Namen.
 -	**Tipp** :bulb: : Weisen Sie dem IFC-Layer das Attribut «Name» zu. Dies ermöglicht der Architektur optimale «Filter»-Möglichkeiten der Bauteile.
 
-    ![localized image](../img/exp.png){: style="width:600px"}
+    ![localized image](../img/de/exp.png){: style="width:600px"}
  
 <br> 
 
@@ -131,7 +131,7 @@ Exportiert werden nur die in den Austauschanforderungen definierten Elemente. Di
 
 **Tipp** :bulb: : Datenaustausch - **so viel wie nötig, aber so wenig wie möglich** (Informationen sowie Geometrie und deren Detaillierungsgrad).
 
-![localized image](../img/detaillierung.png){: style="width:600px"} 
+![localized image](../img/de/detaillierung.png){: style="width:600px"} 
 
 **Export Elementbau**
 
@@ -141,7 +141,7 @@ Für die korrekte Gliederung zusammengesetzter Bauteile (Elementbau) im IFC-Sche
 -	Hüllkörper beinhaltet die korrekte IFC-Entität (Wall, Opening, Slab, Roof, …).
  
 
-![localized image](../img/wand.png){: style="width:600px"} 
+![localized image](../img/de/wand.png){: style="width:600px"} 
 
  
 **Kontrolle der IFC-Datei (Quality Gate)**
