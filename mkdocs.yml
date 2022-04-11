@@ -101,6 +101,8 @@ plugins:
 
   - search:
       separator: '[\s\-\.\_]+'  
+  #- mkdocs-versioning:
+      #version: "Version 29" 
   # - mkdocs-versioning:
       # version: version 28.0
   - i18n:

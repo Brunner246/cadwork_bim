@@ -1,5 +1,23 @@
 # Property Mapper
 
+# Property Set
+
+Um in IFC eine Erweiterung oder Spezialisierung von Klassen umzusetzen, ohne neue Subklassen zu erstellen, gibt es die Möglichkeit, Eigenschaften von Objekten zu definieren. Die Eigenschaften sind in IFC auf zwei Arten implementiert: einerseits durch Attribute und andererseits durch Properties (Merkmale). Diese Zweiteilung wurde in IFC vorgesehen, da von Nutzern benötigte Eigenschaften nicht immer international standardisiert und vorhersehbar sind. Das Schema sollte nicht weiter aufgebläht werden. Attribute dienen dazu, einige grundlegende Eigenschaften von Objekten direkt im Schema abzulegen. Ein Beispiel dafür bietet das Attribut OverallHeight der Klasse IfcDoor, das bei der Instanziierung eines Türobjekts angegeben werden kann. Attribute sind statisch und können somit nicht von Nutzern erzeugt werden. Die dynamisch erzeugbaren Properties stehen im Gegensatz dazu. Sie bieten die Möglichkeit zu nationalen bzw. nutzerspezifischen Erweiterungen des IFC-Schemas.
+
+**Was ist IfcPropertySet?** <br>
+IfcPropertySet bezeichnet alle Eigenschaften, die einem IFC-Modellobjekt zugeordnet werden können.
+Die Eigenschaften, die in einem solchen Satz (set) enthalten sind, können von zwei Typologien sein:
+
+* vordefiniert
+* zusätzlich/angepasst (d.h. benutzerdefiniert).
+
+Die vordefinierten Eigenschaften sind diejenigen, die dem Standard folgen. 
+
+Die IFC-Datenstruktur erlaubt, in Ergänzung zu den bereits vorhandenen Vorgaben, die Definition individueller Ergänzungen. Diese können projektspezifisch in einem lokalen Rahmen definiert werden und werden an das Projektteam kommuniziert.[^1]
+
+[^1]: [BIMcert Handbuch](https://bif.bauwesen.tuwien.ac.at/fortbildung/kurse/aktuelle-kurse/bimcert/)
+
+
 ![localized image](../img/de/prop_mapper.png)
 
 1. **Ausgewählte IFC-Datei**
